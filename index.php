@@ -68,6 +68,55 @@
           and envelop you in the finest comforts of island living.
         </p>
       </div>
+
+      <div class="acc-grid">
+
+        <div class="acc-card reveal">
+          <div class="acc-img">
+            <img src="https://images.unsplash.com/photo-1676089774867-4c95eafda312?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Skydeck Suite" loading="lazy">
+          </div>
+          <div class="acc-body">
+            <h3 class="acc-title">Skydeck Suite</h3>
+            <p class="acc-desc">An elevated coastal retreat offering sweeping sea views 
+              and private luxury. Ideal for a premium day escape or a peaceful overnight stay.
+            </p>
+            <ul class="acc-amenities" role="list">
+              <li class="acc-amenity">Private Skydeck</li>
+              <li class="acc-amenity">Loft Design</li>
+              <li class="acc-amenity">Beach Balcony</li>
+            </ul>
+            <div class="acc-price-desc">Day Trip Rate</div>
+            <div class="acc-price"><span>From</span> &#8369 6,000 <span>/ day</span></div>
+            <div class="acc-price-note">*Overnight stays from &#8369 12,000</div>
+          </div>
+        </div>
+
+        <div class="acc-card reveal reveal-d1">
+          <div class="acc-img">
+            <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Cabana" loading="lazy">
+          </div>
+          <div class="acc-body">
+            <h3 class="acc-title">Cabana</h3>
+            <p class="acc-desc">
+              An intimate beachfront cottage balancing cozy island charm with air-conditioned comfort. 
+              Ideal for a relaxed day getaway or a peaceful overnight stay.
+            </p>
+            <ul class="acc-amenities" role="list">
+              <li class="acc-amenity">Cozy Cottage</li>
+              <li class="acc-amenity">Air Conditioned</li>
+              <li class="acc-amenity">Resort Access</li>
+            </ul>
+            <div class="acc-price-desc">Day Trip Rate</div>
+            <div class="acc-price"><span>From</span> &#8369 2,000 <span>/ day</span></div>
+            <div class="acc-price-note">*Overnight stays from &#8369 4,000</div>
+          </div>
+        </div>
+      </div>
+      <div class="acc-cta">
+        <a href="/pages/accommodations.php" class="btn-primary">View All Accommodations</a>
+      </div>
     </div>
   </section>
 
