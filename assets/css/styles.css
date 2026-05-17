@@ -89,6 +89,7 @@ a { text-decoration: none; }
     
 }
 
+/*hero*/
 .hero {
     position: relative;
     height: 100vh;
@@ -174,6 +175,7 @@ a { text-decoration: none; }
     backdrop-filter: blur(4px);
 }
 
+/*section helpers*/
 .section-tag {
     display: block;
     font-family: 'Cinzel', serif;
@@ -193,3 +195,72 @@ a { text-decoration: none; }
     margin-bottom: 1rem;
 }
 
+.section-heading em { font-style: italic; color: var(--gold-deep); }
+
+.section-divider {
+    width: 3.2rem;
+    height: 1px;
+    background: var(--gold);
+    margin: 1.25rem 0;
+}
+
+.section-divider--center { margin-left: auto; margin-right: auto; }
+
+.section-body {
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.95;
+    color: var(--text-light);
+    max-width: 32rem;
+}
+
+.section-body--center { margin-left: auto; margin-right: 0 auto; }
+
+/*experiences*/
+#experiences {
+    padding: 6rem 3.75rem;
+    background: var(--ivory);
+}
+
+.exp-inner { max-width: 75rem; margin: 0 auto; }
+
+.exp-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3.5rem;
+}
+
+/*accommodations*/
+#accommodations {
+    padding: 6rem 3.75rem;
+    background: #f0e8d8;
+}
+
+.acc-inner { max-width: 75rem; margin: 0 auto; }
+
+.acc-header { text-align: center; margin-bottom: 3.5rem;}
+
+/*gallery*/
+#gallery {
+    padding: 6rem 3.75rem;
+    background: var(--dark);
+}
+
+.gal-iner { max-width: 81.25rem; margin: auto; }
+
+.gal-header { text-align: center; margin-bottom: 3.5rem; }
+
+/*reviews*/
+#reviews {
+    padding: 6rem 3.75rem;
+    background: var(--ivory);
+    position: relative;
+    overflow: hidden;
+}
+
+.rev-inner { max-width: 75rem; margin: 0 auto; }
+
+.rev-header { text-align: center; margin-bottom: 3.5rem; }

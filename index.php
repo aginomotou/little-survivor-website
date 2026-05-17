@@ -34,10 +34,107 @@
               </div><-->
   </section>
 
-  <!--experience-->
-  <section class="experience" id="experience">
-    <span class="section-tag">Island Escapes</span>
-    <h2 class="section-heading" id="exp-heading">Curated <em>Experiences</em></h2>
+  <!--experiences-->
+  <section id="experiences" aria-labelledby="exp-heading">
+    <div class="exp-inner">
+
+      <div class="exp-header">
+        <div class="reveal">
+          <span class="section-tag">Island Escapes</span>
+          <h2 class="section-heading" id="exp-heading">Curated <em>Experiences</em></h2>
+          <div class="section-divider"></div>
+          <p class="section-body">
+            Dive into the soul of the island, From dawn reef walks to twilight feasts on
+            the shore, every experience is crafted to leave a mark on your heart.
+          </p>
+        </div>
+      </div>
+      <div class="reveal reveal-d2">
+        <a href="pages/experiences.php" class="btn-outline">View All Experiences</a>
+      </div>
+    </div>
+  </section>
+
+  <!--accommodations-->
+  <section id="accommodations" aria-labelledby="acc-heading">
+    <div class="acc-inner">
+
+      <div class="acc-header">
+        <span class="section-tag">Where You Stay</span>
+        <h2 class="section-heading" id="acc-heading">Featured <em>Accommodations</em></h2>
+        <div class="section-divider section-divider--center"></div>
+        <p class="section-body section-body--center">
+          Each villa has been thoughtfully designed to frame the sea, invite the breeze,
+          and envelop you in the finest comforts of island living.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--gallery-->
+  <section id="gallery" aria-labelledby="gal-heading">
+    <div class="gal-inner">
+
+      <div class="gal-header">
+        <span class="section-tag">Through The Lens</span>
+        <h2 class="section-heading" id="gal-heading">A <em>Visual</em> Story</h2>
+        <div class="section-divider section-divider--center"></div>
+      </div>
+    </div>
+  </section>
+
+  <!--reviews-->
+  <section id="reviews" aria-labelledby="rev-heading">
+    <div class="rev-inner">
+
+    <div class="rev-header">
+      <span class="section-tag">Guest Stories</span>
+      <h2 class="section-heading" id="rev-heading">Words from <em>Our Guests</em></h2>
+      <div class="section-divider section-divider--center"></div>
+      <p class="section-body section-body--center">
+        The most honest measure of our resort is not found in our words, but in the
+        memories our guests carry home.
+      </p>
+    </div>
+    </div>
+  </section>
+
+  <!--about-->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="about-inner">
+
+      <div class="about-header">
+        <span class="section-tag">Our Origin</span>
+        <h2 class="section-heading" id="about-heading">The Little <em>Survivor</em> Story</h2>
+        <div class="section-divider"></div>
+        <p class="story-body">
+          Born from the resilient spirit of the island and the people who call it home,
+          The Little Survivor is more than a resort—it is a testament to nature's quiet
+          endurance and the human desire to belong somewhere truly beautiful.
+        </p>
+        <p class="story-body">
+          Founded by a family who rebuilt after storms and planted roots deeper than any
+          hardship, our resort carries the soul of the shore in every stone, every palm,
+          every sunset we share with our guests.
+        </p>
+        <a href="/pages/about.php" class="btn-ghost">Discover Our Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!--contact-->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="contact-inner">
+      <div class="contact-header">
+        <span class="section-tag">Reach Out</span>
+        <h2 class="section-heading" id="contact-heading">Plan Your <em>Escape</em></h2>
+        <div class="section-divider"></div>
+        <p class="section-body">
+          Whether you're planning a honeymoon, a family retreat, or a private event on
+          the shore, our team is ready to craft your perfect stay.
+        </p>
+      </div>
+    </div>
   </section>
 </body>
 
