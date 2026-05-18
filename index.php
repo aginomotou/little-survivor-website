@@ -39,7 +39,7 @@
     <div class="exp-inner">
 
       <div class="exp-header">
-        <div class="reveal">
+        <div class="">
           <span class="section-tag">Island Escapes</span>
           <h2 class="section-heading" id="exp-heading">Curated <em>Experiences</em></h2>
           <div class="section-divider"></div>
@@ -48,10 +48,80 @@
             the shore, every experience is crafted to leave a mark on your heart.
           </p>
         </div>
+        <div class="">
+          <a href="pages/experiences.php" class="btn-outline">View All Experiences</a>
+       </div>
       </div>
-      <div class="reveal reveal-d2">
-        <a href="pages/experiences.php" class="btn-outline">View All Experiences</a>
+
+      <div class="exp-grid">
+
+        <div class="exp-card exp-card--large">
+          <img src="https://placehold.co/600x400/png"
+          alt="ATV Beach Ride" loading="lazy">
+          <div class="exp-overlay"></div>
+          <div class="exp-content">
+            <span class="exp-tag">Paid &bull; &#8369 1,600/hour</span>
+            <div class="exp-title">ATV Beach Ride</div>
+            <p class="exp-desc">Tear across the shoreline on an all-terrain vehicle — the most 
+              thrilling way to see the full length of our beachfront.
+            </p>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <img src="https://placehold.co/600x400/png">
+          <div class="exp-overlay"></div>
+          <div class="exp-content">
+            <span class="exp-tag">Paid &bull; &#8369 200/ride</span>
+            <div class="exp-title">Banana Boat</div>
+            <p class="exp-desc">
+              Hold on and laugh — our banana boat is a classic crowd-pleaser skimming across the 
+              bay with the whole family.
+            </p>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <img src="https://placehold.co/600x400/png">
+          <div class="exp-overlay"></div>
+          <div class="exp-content">
+            <span class="exp-tag">Paid &bull; &#8369 200/ride</span>
+            <div class="exp-title">Dragon Boat</div>
+            <p class="exp-desc">
+              Paddle in sync with your crew aboard a traditional dragon boat — equal parts spectacle 
+              and adventure on the water.
+            </p>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <img src="https://placehold.co/600x400/png">
+          <div class="exp-overlay"></div>
+          <div class="exp-content">
+            <span class="exp-tag">Lorem &bull; Lorem</span>
+            <div class="exp-title">Lorem</div>
+            <p class="exp-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <img src="https://placehold.co/600x400/png">
+          <div class="exp-overlay"></div>
+          <div class="exp-content">
+            <span class="exp-tag">Lorem &bull; Lorem</span>
+            <div class="exp-title">Lorem</div>
+            <p class="exp-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+
       </div>
+
     </div>
   </section>
 
@@ -71,9 +141,9 @@
 
       <div class="acc-grid">
 
-        <div class="acc-card reveal">
+        <div class="acc-card">
           <div class="acc-img">
-            <img src="https://images.unsplash.com/photo-1676089774867-4c95eafda312?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            <img src="https://placehold.co/600x400/png"
             alt="Skydeck Suite" loading="lazy">
           </div>
           <div class="acc-body">
@@ -92,9 +162,9 @@
           </div>
         </div>
 
-        <div class="acc-card reveal reveal-d1">
+        <div class="acc-card">
           <div class="acc-img">
-            <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            <img src="https://placehold.co/600x400/png"
             alt="Cabana" loading="lazy">
           </div>
           <div class="acc-body">
@@ -126,9 +196,61 @@
 
       <div class="gal-header">
         <span class="section-tag">Through The Lens</span>
-        <h2 class="section-heading" id="gal-heading">A <em>Visual</em> Story</h2>
-        <div class="section-divider section-divider--center"></div>
+        <h2 class="section-heading section-heading--light" id="gal-heading">A <em>Visual</em> Story</h2>
+        <div class="section-divider section-divider--center section-divider--muted"></div>
+        <p class="section-body section-body--center section-body--light">
+          Every frame a memory waiting to be made — sunlit mornings, golden evenings,
+          and the infinite blue between.
+        </p>
       </div>
+
+      <div class="gal-grid" role="list" aria-label="Resort photo gallery">
+        <div class="gal-item gal-item--featured" role="listitem">
+          <img src="https://placehold.co/600x400/png"
+          alt="Placeholder" loading="lazy">
+        </div>
+
+        <div class="gal-item gal-item--span-4" role="listitem">
+          <img src="https://placehold.co/600x400/png"
+          alt="Placeholder" loading="lazy">
+        </div>
+
+        <div class="gal-item gal-item--span-3" role="listitem">
+          <img src="https://placehold.co/600x400/png"
+          alt="Placeholder" loading="lazy">
+        </div>
+
+        <div class="gal-item gal-item--span-4" role="listitem">
+          <img src="https://placehold.co/600x400/png"
+          alt="Placeholder" loading="lazy">
+        </div>
+
+        <div class="gal-item gal-item--span-3" role="listitem">
+          <img src="https://placehold.co/600x400/png"
+          alt="Placeholder" loading="lazy">
+        </div>
+
+        <div class="gal-item gal-item--span-4" role="listitem">
+          <img src="https://placehold.co/600x400/png"
+          alt="Placeholder" loading="lazy">
+        </div>
+
+        <div class="gal-item gal-item--span-4" role="listitem">
+          <img src="https://placehold.co/600x400/png"
+          alt="Placeholder" loading="lazy">
+        </div>
+
+        <div class="gal-item gal-item--span-4" role="listitem">
+          <img src="https://placehold.co/600x400/png"
+          alt="Placeholder" loading="lazy">
+        </div>
+
+      </div>
+
+      <div class="gal-cta">
+        <a href="/pages/gallery.php" class="btn-ghost">Explore Full Gallery</a>
+      </div>
+
     </div>
   </section>
 
@@ -141,10 +263,65 @@
       <h2 class="section-heading" id="rev-heading">Words from <em>Our Guests</em></h2>
       <div class="section-divider section-divider--center"></div>
       <p class="section-body section-body--center">
-        The most honest measure of our resort is not found in our words, but in the
-        memories our guests carry home.
+        "The most honest measure of our resort is not found in our words, but in the
+        memories our guests carry home.""
       </p>
     </div>
+
+    <div class="rev-grid">
+      <div class="rev-card">
+        <div class="rev-stars" aria-label="5 out of 5 stars"></div>
+        <p class="rev-text">
+          "Sulit ang stay dito. Hindi crowded. Comfortable, peaceful at may privacy. May clear water,
+          amazing mountain view, powdery sand. Perfect for family and friends' getaway. Enjoy lahat,
+          adults and kids. Will surely come back again."
+        </p>
+        <div class="rev-author">
+          <img src="https://placehold.co/600x400/png"
+            alt="Wilma F." class="rev-avatar" loading="lazy">
+          <div>
+            <div class="rev-name">Wilma F.</div>
+            <div class="rev-origin">Antipolo, Rizal</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev-card">
+        <div class="rev-stars" aria-label="5 out of 5 stars"></div>
+        <p class="rev-text">
+          "If you're looking for a place where your family can unplug, reconnect, and make beautiful
+          memories together, Little Survivor Beach Resort is the perfect destination. We left with
+          full hearts, sandy feet, and a promise to return next year!"
+        </p>
+        <div class="rev-author">
+          <img src="https://placehold.co/600x400/png"
+            alt="Ymak M." class="rev-avatar" loading="lazy">
+          <div>
+            <div class="rev-name">Ymak M.</div>
+            <div class="rev-origin">Quezon City, Metro Manila</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev-card">
+        <div class="rev-stars" aria-label="5 out of 5 stars"></div>
+        <p class="rev-text">
+          "Great place for family and barkada where you can relax and enjoy the scenery. We stayed
+          for 3d2n and it was perfect!!! The place is well maintained and the owners are friendly too!
+          They went over and beyond to make our stay enjoyable! I highly recommend this place!"
+        </p>
+        <div class="rev-author">
+          <img src="https://placehold.co/600x400/png"
+            alt="Roralaine T." class="rev-avatar" loading="lazy">
+          <div>
+            <div class="rev-name">Roralaine T.</div>
+            <div class="rev-origin">Malolos, Bulacan</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
     </div>
   </section>
 
