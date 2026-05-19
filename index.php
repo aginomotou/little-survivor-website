@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Little Survivor Beach Resort">
   <link rel="icon" type="image/png" href="/assets/images/logo.png" sizes="16x16 32x32">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
@@ -62,7 +63,7 @@
           <div class="exp-content">
             <span class="exp-tag">Paid &bull; &#8369 1,600/hour</span>
             <div class="exp-title">ATV Beach Ride</div>
-            <p class="exp-desc">Tear across the shoreline on an all-terrain vehicle — the most 
+            <p class="exp-desc">Tear across the shoreline on an all-terrain vehicle—the most 
               thrilling way to see the full length of our beachfront.
             </p>
           </div>
@@ -75,7 +76,7 @@
             <span class="exp-tag">Paid &bull; &#8369 200/ride</span>
             <div class="exp-title">Banana Boat</div>
             <p class="exp-desc">
-              Hold on and laugh — our banana boat is a classic crowd-pleaser skimming across the 
+              Hold on and laugh—our banana boat is a classic crowd-pleaser skimming across the 
               bay with the whole family.
             </p>
           </div>
@@ -88,7 +89,7 @@
             <span class="exp-tag">Paid &bull; &#8369 200/ride</span>
             <div class="exp-title">Dragon Boat</div>
             <p class="exp-desc">
-              Paddle in sync with your crew aboard a traditional dragon boat — equal parts spectacle 
+              Paddle in sync with your crew aboard a traditional dragon boat—equal parts spectacle 
               and adventure on the water.
             </p>
           </div>
@@ -199,7 +200,7 @@
         <h2 class="section-heading section-heading--light" id="gal-heading">A <em>Visual</em> Story</h2>
         <div class="section-divider section-divider--center section-divider--muted"></div>
         <p class="section-body section-body--center section-body--light">
-          Every frame a memory waiting to be made — sunlit mornings, golden evenings,
+          Every frame a memory waiting to be made—sunlit mornings, golden evenings,
           and the infinite blue between.
         </p>
       </div>
@@ -319,7 +320,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
     </div>
@@ -327,31 +327,38 @@
 
   <!--about-->
   <section id="about" aria-labelledby="about-heading">
-    <div class="about-inner">
 
-      <div class="about-header">
-        <span class="section-tag">Our Origin</span>
-        <h2 class="section-heading" id="about-heading">The Little <em>Survivor</em> Story</h2>
-        <div class="section-divider"></div>
-        <p class="story-body">
+    <div class="about-img">
+      <img src="https://placehold.co/600x400/png"
+        alt="Placeholder" loading="lazy">
+    </div>
+
+    <div class="about-content">
+      <span class="section-tag">Our Origin</span>
+      <h2 class="section-heading section-heading--light" id="about-heading">
+        The Little <em>Survivor</em> Story
+      </h2>
+      <div class="section-divider section-divider--muted"></div>
+      <p class="about-body">
           Born from the resilient spirit of the island and the people who call it home,
           The Little Survivor is more than a resort—it is a testament to nature's quiet
           endurance and the human desire to belong somewhere truly beautiful.
-        </p>
-        <p class="story-body">
+      </p>
+      <p class="about-body about-body--extended">
           Founded by a family who rebuilt after storms and planted roots deeper than any
           hardship, our resort carries the soul of the shore in every stone, every palm,
           every sunset we share with our guests.
-        </p>
-        <a href="/pages/about.php" class="btn-ghost">Discover Our Story</a>
-      </div>
+      </p>
+      <a href="/pages/about.php" class="btn-ghost">Discover Our Story</a>
     </div>
+
   </section>
 
   <!--contact-->
   <section id="contact" aria-labelledby="contact-heading">
     <div class="contact-inner">
-      <div class="contact-header">
+
+      <div>
         <span class="section-tag">Reach Out</span>
         <h2 class="section-heading" id="contact-heading">Plan Your <em>Escape</em></h2>
         <div class="section-divider"></div>
@@ -359,7 +366,166 @@
           Whether you're planning a honeymoon, a family retreat, or a private event on
           the shore, our team is ready to craft your perfect stay.
         </p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-item-text">
+              <h4>Location</h4>
+              <p>Purok 8, Barangay Panan <br>Botolan, 2202 Zambales <br>Philippines</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-item-text">
+              <h4>Call or Text</h4>
+              <a href="tel:+63 919 260 1511" aria-label="Call us at +63 919 260 1511">+63 919 260 1511</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-item-text">
+              <h4>Email</h4>
+              <a href="mailto:littlesurvivorbeachresort@gmail.com" 
+              aria-label="Email us at littlesurvivorbeachresort@gmail.com">
+              littlesurvivorbeachresort@gmail.com</a>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!--forms-->
+      <div>
+        <form
+          class="inquiry-form"
+          id="inquiryForm"
+          action=""
+          method="post"
+          novalidate
+          aria-label="Send an inquiry to the resort"
+        >
+
+          <div class="form-pot" aria-hidden="true">
+          <label for="website"></label>
+          <input
+            type="text"
+            id="website"
+            name="website"
+            tabindex="-1"
+            autocomplete="off"
+          >
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name <span class="req" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                autocomplete="given-name"
+                required
+                aria-required="true"
+                maxlength="60"
+                placeholder="Juan"
+              >
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name <span class="req" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                autocomplete="family-name"
+                required
+                aria-required="true"
+                maxlength="60"
+                placeholder="Dela Cruz"
+              >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span class="req" aria-hidden="true">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              aria-required="true"
+              maxlength="254"
+              placeholder="juandelacruz@gmail.com"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="inquiry-type">
+              What can we help you with? <span class="req" aria-hidden="true">*</span>
+            </label>
+            <select
+              id="inquiry-type"
+              name="inquiry_type"
+              required
+              aria-required="true"
+            >
+              <option value="" disabled selected>Select a topic...</option>
+              <option value="rates">Room Rates &amp; Availability</option>
+              <option value="activities">Activities &amp; Experiences</option>
+              <option value="group">Group or Event Booking</option>
+              <option value="special">Special Occassions</option>
+              <option value="other">General Question</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              aria-required="true"
+              maxlength="1000"
+              rows="5"
+              placeholder="Tell us what you have in mind—we'd love to help make it happen."
+            ></textarea>
+            <span class="form-hint" id="charCount" aria-live="polite">0 / 1000</span>
+          </div>
+
+          <p class="form-privacy">
+            Your details are used only to respond to your inquiry and will never be shared with
+            third parties. See our Privacy Policy.
+          </p>
+
+          <div
+            class="form-feedback"
+            id="formFeedback"
+            role="alert"
+            aria-live="assertive"
+          ></div>
+
+          <button
+            type="submit"
+            class="btn-submit"
+            id="submitBtn"
+          >
+            Send Message
+          </button>
+
+        </form>
+      </div>
+
     </div>
   </section>
 </body>
