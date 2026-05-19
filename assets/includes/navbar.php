@@ -7,7 +7,7 @@
     </ul>
   </div>
   <div class="nav-logo">
-    <a href="/index.php" class="home">
+    <a href="/index.php" class="home" aria-label="Little Survivor Beach Resort — home">
       <img src="/assets/images/logo.png" class="logo" alt="Little Survivor Beach Resort Logo">
     </a>
   </div>
