@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
-    <!--nav-->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/navbar.php'; ?>
+    <header>
+      <!--nav-->
+      <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/navbar.php'; ?>
+    </header>
+
+    <footer>
+      <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php'; ?>
+    </footer>
   </body>
 </html>

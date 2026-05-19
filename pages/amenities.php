@@ -13,5 +13,9 @@
       <!--nav-->
       <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/navbar.php'; ?>
     </header>
+
+    <footer>
+      <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php'; ?>
+    </footer>
   </body>
 </html>
