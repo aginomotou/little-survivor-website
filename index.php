@@ -522,12 +522,17 @@
           >
             Send Message
           </button>
-
         </form>
       </div>
-
     </div>
+
   </section>
+
+  <footer>
+    <!--footer-->
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php'; ?>
+  </footer>
+
 </body>
 
 </html>
