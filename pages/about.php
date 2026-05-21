@@ -1,3 +1,8 @@
+<?php 
+  $activePage = 'about';
+  $base = '../';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,11 +16,11 @@
   <body>
     <header>
       <!--nav--> 
-      <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/navbar.php'; ?>
+      <?php include $base . '/assets/includes/navbar.php'; ?>
     </header>
 
     <footer>
-      <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php'; ?>
+      <?php include $base . '/assets/includes/footer.php'; ?>
     </footer>
   </body>
 </html>

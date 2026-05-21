@@ -26,13 +26,9 @@
       <h1 class="hero-title">Find Your Calm<br>by <em>the Coast</em></h1>
       <p class="hero-sub">A peaceful beachfront retreat where nature, comfort,
         and island living come together.</p>
-      <a href="#experience" class="btn-explore">Explore the Resort</a>
+      <a href="#experience" class="btn-frosted">Explore the Resort</a>
     </div>
-
-    <!--<div class="hero-scroll" aria-hidden="true">
-                <span>Scroll</span>
-                <div class="scroll-line"></div>
-              </div><-->
+    
   </section>
 
   <!--experiences-->
@@ -508,19 +504,9 @@
             third parties. See our Privacy Policy.
           </p>
 
-          <div
-            class="form-feedback"
-            id="formFeedback"
-            role="alert"
-            aria-live="assertive"
-          ></div>
+          <div class="form-feedback" id="formFeedback" role="alert" aria-live="assertive"></div>
 
-          <button
-            type="submit"
-            class="btn-submit"
-            id="submitBtn"
-          >
-            Send Message
+          <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
           </button>
         </form>
       </div>

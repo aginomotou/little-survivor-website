@@ -34,6 +34,7 @@ a { text-decoration: none; }
 ::-webkit-scrollbar-track { background: var(--ivory); }
 ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
 
+/*navbar*/
 .navbar {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -53,18 +54,36 @@ a { text-decoration: none; }
 
 .nav-links a {
     position: relative;
-    color: rgba(255,255,255,0.88);
+    color: rgba(255, 255, 255, 0.88);
     font-family: 'Cinzel', serif;
     font-size: 0.68rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.18em;
-    transition: color 0.25s;
+    transition: color 0.25s ease;
 }
 
-.nav-links a:hover { color: var(--white); }
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; 
+    left: 0;
+    width: 0; 
+    height: 1px;
+    background: var(--gold);
+    transition: width 0.3s ease;
+}
 
-.nav-links a:hover { color: var(--gold-pale); }
+.nav-links a.active {
+    color: var(--gold);
+}
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-links a:hover { 
+    color: var(--gold-pale); 
+}
 
 .nav-links .btn-book {
     font-weight: 600;
@@ -90,6 +109,7 @@ a { text-decoration: none; }
     
 }
 
+/*index.php*/
 /*hero*/
 .hero {
     position: relative;
@@ -161,19 +181,6 @@ a { text-decoration: none; }
     max-width: 34rem;
     margin: 0 auto 2.5rem;
     line-height: 1.85;
-}
-
-.btn-explore {
-    display: inline-block;
-    font-family: 'Cinzel', serif;
-    font-size: 0.7rem;
-    font-weight: 500;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: var(--white);
-    border: 1.5px solid rgba(255, 255, 255, 0.6);
-    padding: 1em 2.6em;
-    backdrop-filter: blur(4px);
 }
 
 /*section helpers*/
@@ -255,6 +262,19 @@ a { text-decoration: none; }
     background: var(--gold);
     border-color:var(--gold);
     color: var(--dark);
+}
+
+.btn-frosted {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--white);
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+    padding: 1em 2.6em;
+    backdrop-filter: blur(4px);
 }
 
 .btn-outline {
@@ -1008,4 +1028,27 @@ footer {
     align-items: center;
     font-size: 0.71rem;
     color: rgba(245,240,232,0.27);  
+}
+
+/*contact-us.php page*/
+.contact-page {
+    padding: 6rem 3.75rem;
+    background: var(--sand-light);
+}
+
+.contact-page-inner {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.contact-hero-bg {
+    position: absolute; inset: 0;
+    background-image: url('https://placehold.co/600x400/png');
+    background-size: cover;
+    background-position: center 30%;
+    transform: scale(1.06);
 }

@@ -1,21 +1,170 @@
+<?php
+$activePage = 'contact';
+$base = '../';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Little Survivor Beach Resort</title>
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Little Survivor Beach Resort">
-    <link rel="icon" type="image/png" href="/assets/images/logo.png" sizes="16x16 32x32">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body>
-    <header>
-      <!--nav-->
-      <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/navbar.php'; ?>
-    </header>
 
-    <footer>
-      <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php'; ?>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Little Survivor Beach Resort</title>
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Little Survivor Beach Resort">
+  <link rel="icon" type="image/png" href="/assets/images/logo.png" sizes="16x16 32x32">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <!--nav-->
+    <?php include $base . '/assets/includes/navbar.php'; ?>
+  </header>
+
+  <section class="hero" id="hero" aria-labelledby="contact-hero-title">
+
+    <div class="contact-hero-bg hero-bg--contact" role="presentation"></div>
+    <div class="hero-overlay" role="presentation"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">We&rsquo;d Love to Hear from You</p>
+      <h1 class="hero-title" id="contact-hero-title">Get in <em>Touch</em></h1>
+      <p class="hero-sub">
+        Whether you have a question, a special request, or you&rsquo;re ready to
+        start planning &mdash; our team is here and happy to help.
+      </p>
+      <a href="#" class="btn-frosted">Send Us a Message</a>
+    </div>
+  </section>
+
+  <section class="contact-page" aria-labelledby="form-heading">
+    <div class="contact-page-inner">
+
+      <div class="">
+        <span class="section-tag">Send a Message</span>
+        <h2 class="section-heading" id="form-heading">We <em>Listen</em></h2>
+        <div class="section-divider"></div>
+        <p class="section-body">
+          Not ready to book yet? Ask us anything &mdash; about rates, activities,
+          getting here, or planning a special occasion. We&rsquo;ll get back to you
+          within 24&nbsp;hours.
+        </p>
+
+        <form
+          class="inquiry-form"
+          id="inquiryForm"
+          action=""
+          method="post"
+          novalidate
+          aria-label="Send an inquiry to the resort">
+
+          <div class="form-pot" aria-hidden="true">
+            <label for="website"></label>
+            <input
+              type="text"
+              id="website"
+              name="website"
+              tabindex="-1"
+              autocomplete="off">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name <span class="req" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                autocomplete="given-name"
+                required
+                aria-required="true"
+                maxlength="60"
+                placeholder="Juan">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name <span class="req" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                autocomplete="family-name"
+                required
+                aria-required="true"
+                maxlength="60"
+                placeholder="Dela Cruz">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span class="req" aria-hidden="true">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              aria-required="true"
+              maxlength="254"
+              placeholder="juandelacruz@gmail.com">
+          </div>
+
+          <div class="form-group">
+            <label for="inquiry-type">
+              What can we help you with? <span class="req" aria-hidden="true">*</span>
+            </label>
+            <select
+              id="inquiry-type"
+              name="inquiry_type"
+              required
+              aria-required="true">
+              <option value="" disabled selected>Select a topic...</option>
+              <option value="rates">Room Rates &amp; Availability</option>
+              <option value="activities">Activities &amp; Experiences</option>
+              <option value="group">Group or Event Booking</option>
+              <option value="special">Special Occassions</option>
+              <option value="other">General Question</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              aria-required="true"
+              maxlength="1000"
+              rows="5"
+              placeholder="Tell us what you have in mind—we'd love to help make it happen."></textarea>
+            <span class="form-hint" id="charCount" aria-live="polite">0 / 1000</span>
+          </div>
+
+          <p class="form-privacy">
+            Your details are used only to respond to your inquiry and will never be shared with
+            third parties. See our Privacy Policy.
+          </p>
+
+          <div class="form-feedback" id="formFeedback" role="alert" aria-live="assertive"></div>
+          
+          <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
+        </form>
+      </div>
+
+      <div class="">
+        <span class="section-tag">Where to Find Us</span>
+        <h2 class="section-heading">Our <em>Location</em></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="map-wrapper">
+        
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <?php include $base . '/assets/includes/footer.php'; ?>
+  </footer>
+</body>
+
 </html>
