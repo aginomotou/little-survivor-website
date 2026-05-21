@@ -1052,3 +1052,11 @@ footer {
     background-position: center 30%;
     transform: scale(1.06);
 }
+
+.map-wrapper iframe {
+    display: block;
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto;
+    border: none;
+}

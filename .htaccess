@@ -1,0 +1,4 @@
+<IfModule mod_headers.c>
+    Header always unset X-Frame-Options
+    Header set Content-Security-Policy "frame-src 'self' https://www.google.com https://maps.google.com;"
+</IfModule>

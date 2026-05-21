@@ -145,7 +145,7 @@ $base = '../';
           </p>
 
           <div class="form-feedback" id="formFeedback" role="alert" aria-live="assertive"></div>
-          
+
           <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
         </form>
       </div>
@@ -154,11 +154,80 @@ $base = '../';
         <span class="section-tag">Where to Find Us</span>
         <h2 class="section-heading">Our <em>Location</em></h2>
         <div class="section-divider"></div>
-      </div>
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.1020314938623!2d120.02013417301336!3d15.207581685353881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33942f1070647bc9%3A0xfb5727be3149caba!2sLittle%20Survivor%20Beach%20Resort!5e0!3m2!1sen!2sph!4v1779376457872!5m2!1sen!2sph"
+            title="Little Survivor Beach Resort on Google Maps"
+            width="600" height="450"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
 
-      <div class="map-wrapper">
+        <div class="location-details">
+          <div class="location-item">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div>
+            <h4>Address</h4>
+            <p>Pag-asa Beach, Coron Island<br>Palawan, Philippines 5316</p>
+          </div>
+
+          <div class="location-item">
+            <div class="location-icon-wrap" aria-hidden="true">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <h4>Call or Text</h4>
+              <a href="tel:+639178882024" aria-label="Call 0917 888 2024">0917 888 2024</a>
+              <a href="tel:+639178882025" aria-label="Call 0917 888 2025">0917 888 2025</a>
+            </div>
+
+            <div class="location-item">
+              <div class="location-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <h4>Operating Hours</h4>
+                <table class="hours-table" aria-label="Resort operating hours">
+                  <tbody>
+                    <tr>
+                      <td>Front Desk</td>
+                      <td>Open daily, 7:00am &ndash; 9:00pm</td>
+                    </tr>
+                    <tr>
+                      <td>Check-In</td>
+                      <td>2:00pm onwards</td>
+                    </tr>
+                    <tr>
+                      <td>Check-Out</td>
+                      <td>Until 12:00nn</td>
+                    </tr>
+                    <tr>
+                      <td>Activities</td>
+                      <td>8:00am &ndash; 5:00pm daily</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-item">
+            <div class="location-icon-wrap" aria-hidden="true">
+              <i class="fa-solid fa-square-parking"></i>
+            </div>
+            <div>
+              <h4>Parking</h4>
+              <p>Free on-site parking available for all guests.</p>
+            </div>
+          </div>
+
+        </div>
         
       </div>
+    </div>
     </div>
   </section>
 
