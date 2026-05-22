@@ -12,6 +12,7 @@ $base = '../';
   <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Little Survivor Beach Resort">
   <link rel="icon" type="image/png" href="/assets/images/logo.png" sizes="16x16 32x32">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
@@ -166,51 +167,54 @@ $base = '../';
         </div>
 
         <div class="location-details">
+
           <div class="location-item">
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <div>
-            <h4>Address</h4>
-            <p>Pag-asa Beach, Coron Island<br>Palawan, Philippines 5316</p>
+            <div class="location-icon-wrap" aria-hidden="true">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="location-content">
+              <h4>Address</h4>
+              <p>Pag-asa Beach, Coron Island<br>Palawan, Philippines 5316</p>
+            </div>
           </div>
 
           <div class="location-item">
             <div class="location-icon-wrap" aria-hidden="true">
               <i class="fa-solid fa-phone"></i>
             </div>
-            <div>
+            <div class="location-content">
               <h4>Call or Text</h4>
               <a href="tel:+639178882024" aria-label="Call 0917 888 2024">0917 888 2024</a>
               <a href="tel:+639178882025" aria-label="Call 0917 888 2025">0917 888 2025</a>
             </div>
+          </div>
 
-            <div class="location-item">
-              <div class="location-icon-wrap" aria-hidden="true">
-                <i class="fa-solid fa-clock"></i>
-              </div>
-              <div>
-                <h4>Operating Hours</h4>
-                <table class="hours-table" aria-label="Resort operating hours">
-                  <tbody>
-                    <tr>
-                      <td>Front Desk</td>
-                      <td>Open daily, 7:00am &ndash; 9:00pm</td>
-                    </tr>
-                    <tr>
-                      <td>Check-In</td>
-                      <td>2:00pm onwards</td>
-                    </tr>
-                    <tr>
-                      <td>Check-Out</td>
-                      <td>Until 12:00nn</td>
-                    </tr>
-                    <tr>
-                      <td>Activities</td>
-                      <td>8:00am &ndash; 5:00pm daily</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+          <div class="location-item">
+            <div class="location-icon-wrap" aria-hidden="true">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="location-content">
+              <h4>Operating Hours</h4>
+              <table class="hours-table" aria-label="Resort operating hours">
+                <tbody>
+                  <tr>
+                    <td>Front Desk</td>
+                    <td>Open daily, 7:00am &ndash; 9:00pm</td>
+                  </tr>
+                  <tr>
+                    <td>Check-In</td>
+                    <td>2:00pm onwards</td>
+                  </tr>
+                  <tr>
+                    <td>Check-Out</td>
+                    <td>Until 12:00nn</td>
+                  </tr>
+                  <tr>
+                    <td>Activities</td>
+                    <td>8:00am &ndash; 5:00pm daily</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
 
@@ -218,16 +222,15 @@ $base = '../';
             <div class="location-icon-wrap" aria-hidden="true">
               <i class="fa-solid fa-square-parking"></i>
             </div>
-            <div>
+            <div class="location-content">
               <h4>Parking</h4>
               <p>Free on-site parking available for all guests.</p>
             </div>
           </div>
 
         </div>
-        
+
       </div>
-    </div>
     </div>
   </section>
 

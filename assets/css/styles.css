@@ -1047,16 +1047,79 @@ footer {
 
 .contact-hero-bg {
     position: absolute; inset: 0;
-    background-image: url('https://placehold.co/600x400/png');
+    background-image: url('https://images.unsplash.com/photo-1520942702018-0862200e6873?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center 30%;
     transform: scale(1.06);
 }
 
+.map-wrapper {
+    width: 100%; 
+    margin-top: 1.5rem;   /* Creates space below 'Our Location' header */
+    margin-bottom: 2.5rem;  /* Creates the structural gap ABOVE your details text */
+}
+
 .map-wrapper iframe {
     display: block;
-    width: 100%; 
-    max-width: 800px; 
-    margin: 0 auto;
+    width: 100%;          /* Forces the map to fill the column width exactly */
+    max-width: 100%;      /* Prevents it from breaking out of the grid column */
+    height: 380px;        /* Slightly reduced height to fit elegantly next to the form */
     border: none;
+    border-radius: 4px;   
 }
+
+/*location */
+.location-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
+  gap: 2rem 1.5rem;
+}
+ 
+.location-item { display: flex; gap: 1rem; align-items: flex-start; }
+ 
+.location-icon-wrap {
+  width: 2.25rem; height: 2.25rem;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.location-icon-wrap i { font-size: 0.85rem; color: var(--white); }
+ 
+.location-content h4 {
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  color: var(--dark);
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+ 
+.location-content p,
+.location-content a {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--text-light);
+  line-height: 1.7;
+  display: block;
+  transition: color 0.2s;
+}
+.location-item a:hover { color: var(--gold-deep); }
+ 
+.hours-table { width: 100%; border-collapse: collapse; }
+ 
+.hours-table td {
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--text-light);
+  padding: 0.22rem 0;
+  vertical-align: top;
+}
+.hours-table td:first-child {
+  padding-right: 1.5rem;
+  color: var(--text);
+  white-space: nowrap;
+}
+
