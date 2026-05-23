@@ -38,6 +38,32 @@ $base = '../';
     </div>
   </section>
 
+  <section class="contact-strip" aria-label="Quick resort facts">
+    <div class="contact-strip-inner">
+
+      <div class="strip-item">
+        <span class="strip-item-label">Response Time</span>
+        <span class="strip-item-value">Within 24 Hours</span>
+      </div>
+
+      <div class="strip-item">
+        <span class="strip-item-label">Front Desk</span>
+        <span class="strip-item-value">Open Daily, 7am &ndash; 9pm</span>
+      </div>
+
+      <div class="strip-item">
+        <span class="strip-item-label">Walk-ins</span>
+        <span class="strip-item-value">Always Welcome</span>
+      </div>
+
+      <div class="strip-item">
+        <span class="strip-item-label">Parking</span>
+        <span class="strip-item-value">Free On-site</span>
+      </div>
+
+    </div>
+  </section>
+
   <section class="contact-page" aria-labelledby="form-heading">
     <div class="contact-page-inner">
 
@@ -184,8 +210,7 @@ $base = '../';
             </div>
             <div class="location-content">
               <h4>Call or Text</h4>
-              <a href="tel:+639178882024" aria-label="Call 0917 888 2024">0917 888 2024</a>
-              <a href="tel:+639178882025" aria-label="Call 0917 888 2025">0917 888 2025</a>
+              <a href="tel:+639178882024" aria-label="Call +63 919 260 1511">+63 919 260 1511</a>
             </div>
           </div>
 
@@ -231,6 +256,36 @@ $base = '../';
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+    <div class="faq-inner">
+
+      <div class="faq-header">
+        <span class="section-tag">Quick Answers</span>
+        <h2 class="section-heading section-heading--light" id="faq-heading">
+          Frequently Asked <em>Questions</em>
+        </h2>
+        <div class="section-divider section-divider--muted section-divider--center"></div>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button
+            class="faq-question"
+            id="faq-q1"
+            aria-expanded="false"
+            aria-controls="faq-q1">
+            <span class="faq-question-text">What time is check-in and check-out?</span>
+            <span class="faq-icon-wrap" aria-hidden="true">
+              <i class="fa-solid fa-plus"></i>
+            </span>
+          </button>
+        </div>
+
+      </div>
+
     </div>
   </section>
 
