@@ -23,7 +23,6 @@ $base = '../';
   </header>
 
   <section class="hero" id="hero" aria-labelledby="contact-hero-title">
-
     <div class="contact-hero-bg hero-bg--contact" role="presentation"></div>
     <div class="hero-overlay" role="presentation"></div>
 
@@ -38,6 +37,7 @@ $base = '../';
     </div>
   </section>
 
+  <!--strip-->
   <section class="contact-strip" aria-label="Quick resort facts">
     <div class="contact-strip-inner">
 
@@ -64,6 +64,7 @@ $base = '../';
     </div>
   </section>
 
+  <!--form and map-->
   <section class="contact-page" aria-labelledby="form-heading">
     <div class="contact-page-inner">
 
@@ -223,19 +224,19 @@ $base = '../';
               <table class="hours-table" aria-label="Resort operating hours">
                 <tbody>
                   <tr>
-                    <td>Front Desk</td>
+                    <td class="label-column">Front Desk</td>
                     <td>Open daily, 7:00am &ndash; 9:00pm</td>
                   </tr>
                   <tr>
-                    <td>Check-In</td>
+                    <td class="label-column">Check-In</td>
                     <td>2:00pm onwards</td>
                   </tr>
                   <tr>
-                    <td>Check-Out</td>
+                    <td class="label-column">Check-Out</td>
                     <td>Until 12:00nn</td>
                   </tr>
                   <tr>
-                    <td>Activities</td>
+                    <td class="label-column">Activities</td>
                     <td>8:00am &ndash; 5:00pm daily</td>
                   </tr>
                 </tbody>
@@ -259,6 +260,7 @@ $base = '../';
     </div>
   </section>
 
+  <!--faq-->
   <section class="faq-section" id="faq" aria-labelledby="faq-heading">
     <div class="faq-inner">
 
@@ -271,20 +273,82 @@ $base = '../';
       </div>
 
       <div class="faq-list">
-        <div class="faq-item">
-          <button
-            class="faq-question"
-            id="faq-q1"
-            aria-expanded="false"
-            aria-controls="faq-q1">
-            <span class="faq-question-text">What time is check-in and check-out?</span>
-            <span class="faq-icon-wrap" aria-hidden="true">
-              <i class="fa-solid fa-plus"></i>
-            </span>
-          </button>
-        </div>
 
+        <?php
+        $faqs = [
+          [
+            'q' => 'What time is check-in and check-out?',
+            'a' => 'Check-in is from 2:00pm onwards. Check-out is until 12:00nn (noon).
+                  Early check-in and late check-out may be available on request,
+                  subject to room availability &mdash; just let us know in advance.',
+          ],
+          [
+            'q' => 'Do you accept walk-in guests?',
+            'a' => 'Yes, walk-in guests are welcome. We recommend contacting us in advance
+                  &mdash; especially on weekends and holidays &mdash; to make sure we have
+                  availability waiting for you.',
+          ],
+          [
+            'q' => 'Are activity rates included in the room?',
+            'a' => 'Several activities are complimentary for all guests &mdash; beach volleyball,
+                  inflatable pool, darts, board games, and card games. Paid activities
+                  (ATV &#8369;1,600/hour &middot; banana boat &#8369;200/ride &middot;
+                  dragon boat &#8369;200/ride) are charged separately.',
+          ],
+          [
+            'q' => 'Is there parking available?',
+            'a' => 'Yes &mdash; free on-site parking is available for all guests.',
+          ],
+          [
+            'q' => 'Do you accommodate group bookings or events?',
+            'a' => 'Absolutely. We love hosting reunions, team outings, birthdays, and special
+                  occasions. Send us a message above or call us directly and we&rsquo;ll
+                  put something together for your group.',
+          ],
+          [
+            'q' => 'Is there Wi-Fi at the resort?',
+            'a' => 'We have Wi-Fi available at the resort, though connectivity in coastal
+                  areas can vary. We gently encourage you to put the phone down &mdash;
+                  the view is better without a screen in front of it.',
+          ],
+          [
+            'q' => 'What is your cancellation policy?',
+            'a' => 'Please get in touch with us directly for cancellation and rescheduling
+                  arrangements. We handle each situation with flexibility and care &mdash;
+                  we understand that plans sometimes change.',
+          ],
+        ];
+
+        foreach ($faqs as $i => $faq):
+          $n   = $i + 1;
+          $qId = 'faq-q' . $n;
+          $aId = 'faq-a' . $n;
+        ?>
+          <div class="faq-item">
+            <button class="faq-question"
+              id="<?= $qId ?>"
+              aria-expanded="false"
+              aria-controls="<?= $aId ?>">
+              <span class="faq-question-text">
+                <?= htmlspecialchars($faq['q'], ENT_QUOTES, 'UTF-8') ?>
+              </span>
+              <span class="faq-icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-plus"></i>
+              </span>
+            </button>
+            <div class="faq-answer"
+              id="<?= $aId ?>"
+              role="region"
+              aria-labelledby="<?= $qId ?>"
+              aria-hidden="true">
+              <div class="faq-answer-inner">
+                <?= $faq['a'] ?>
+              </div>
+            </div>
+          </div>
+        <?php endforeach; ?>
       </div>
+    </div>
 
     </div>
   </section>
@@ -292,6 +356,8 @@ $base = '../';
   <footer>
     <?php include $base . '/assets/includes/footer.php'; ?>
   </footer>
+
+  <script src="<?= $base ?>assets/js/main.js"></script>
 </body>
 
 </html>
