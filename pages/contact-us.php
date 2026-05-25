@@ -23,7 +23,7 @@ $base = '../';
   </header>
 
   <section class="hero" id="hero" aria-labelledby="contact-hero-title">
-    <div class="contact-hero-bg hero-bg--contact" role="presentation"></div>
+    <div class="hero-bg--contact" role="presentation"></div>
     <div class="hero-overlay" role="presentation"></div>
 
     <div class="hero-content">
