@@ -244,6 +244,8 @@ $base = '../';
   <footer>
     <?php include $base . '/assets/includes/footer.php'; ?>
   </footer>
+
+  <script src="<?= $base ?>assets/js/main.js"></script>
 </body>
 
 </html>

@@ -519,6 +519,7 @@
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php'; ?>
   </footer>
 
+  <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

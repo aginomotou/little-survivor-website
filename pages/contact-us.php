@@ -33,7 +33,7 @@ $base = '../';
         Whether you have a question, a special request, or you&rsquo;re ready to
         start planning &mdash; our team is here and happy to help.
       </p>
-      <a href="#" class="btn-frosted">Send Us a Message</a>
+      <a href="#contact-page" class="btn-frosted">Send Us a Message</a>
     </div>
   </section>
 
@@ -65,7 +65,7 @@ $base = '../';
   </section>
 
   <!--form and map-->
-  <section class="contact-page" aria-labelledby="form-heading">
+  <section class="contact-page" id="contact-page" aria-labelledby="form-heading">
     <div class="contact-page-inner">
 
       <div class="">
