@@ -39,7 +39,7 @@ $base = '../';
 
   <!--strip-->
   <section class="contact-strip" aria-label="Quick resort facts">
-    <div class="contact-strip-inner">
+    <div class="contact-strip-inner reveal">
 
       <div class="strip-item">
         <span class="strip-item-label">Response Time</span>

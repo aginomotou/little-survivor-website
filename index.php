@@ -36,7 +36,7 @@
     <div class="exp-inner">
 
       <div class="exp-header">
-        <div class="">
+        <div class="reveal">
           <span class="section-tag">Island Escapes</span>
           <h2 class="section-heading" id="exp-heading">Curated <em>Experiences</em></h2>
           <div class="section-divider"></div>
@@ -45,12 +45,12 @@
             the shore, every experience is crafted to leave a mark on your heart.
           </p>
         </div>
-        <div class="">
+        <div class="reveal reveal-d2">
           <a href="pages/experiences.php" class="btn-outline">View All Experiences</a>
        </div>
       </div>
 
-      <div class="exp-grid">
+      <div class="exp-grid reveal">
 
         <div class="exp-card exp-card--large">
           <img src="https://placehold.co/600x400/png"
@@ -126,7 +126,7 @@
   <section id="accommodations" aria-labelledby="acc-heading">
     <div class="acc-inner">
 
-      <div class="acc-header">
+      <div class="acc-header reveal">
         <span class="section-tag">Where You Stay</span>
         <h2 class="section-heading" id="acc-heading">Featured <em>Accommodations</em></h2>
         <div class="section-divider section-divider--center"></div>
@@ -138,7 +138,7 @@
 
       <div class="acc-grid">
 
-        <div class="acc-card">
+        <div class="acc-card reveal">
           <div class="acc-img">
             <img src="https://placehold.co/600x400/png"
             alt="Skydeck Suite" loading="lazy">
@@ -159,7 +159,7 @@
           </div>
         </div>
 
-        <div class="acc-card">
+        <div class="acc-card reveal reveal-d1">
           <div class="acc-img">
             <img src="https://placehold.co/600x400/png"
             alt="Cabana" loading="lazy">
@@ -181,7 +181,7 @@
           </div>
         </div>
       </div>
-      <div class="acc-cta">
+      <div class="acc-cta reveal">
         <a href="/pages/accommodations.php" class="btn-primary">View All Accommodations</a>
       </div>
     </div>
@@ -191,7 +191,7 @@
   <section id="gallery" aria-labelledby="gal-heading">
     <div class="gal-inner">
 
-      <div class="gal-header">
+      <div class="gal-header reveal">
         <span class="section-tag">Through The Lens</span>
         <h2 class="section-heading section-heading--light" id="gal-heading">A <em>Visual</em> Story</h2>
         <div class="section-divider section-divider--center section-divider--muted"></div>
@@ -201,7 +201,7 @@
         </p>
       </div>
 
-      <div class="gal-grid" role="list" aria-label="Resort photo gallery">
+      <div class="gal-grid reveal" role="list" aria-label="Resort photo gallery">
         <div class="gal-item gal-item--featured" role="listitem">
           <img src="https://placehold.co/600x400/png"
           alt="Placeholder" loading="lazy">
@@ -244,7 +244,7 @@
 
       </div>
 
-      <div class="gal-cta">
+      <div class="gal-cta reveal">
         <a href="/pages/gallery.php" class="btn-ghost">Explore Full Gallery</a>
       </div>
 
@@ -255,7 +255,7 @@
   <section id="reviews" aria-labelledby="rev-heading">
     <div class="rev-inner">
 
-    <div class="rev-header">
+    <div class="rev-header reveal">
       <span class="section-tag">Guest Stories</span>
       <h2 class="section-heading" id="rev-heading">Words from <em>Our Guests</em></h2>
       <div class="section-divider section-divider--center"></div>
@@ -266,7 +266,7 @@
     </div>
 
     <div class="rev-grid">
-      <div class="rev-card">
+      <div class="rev-card reveal">
         <div class="rev-stars" aria-label="5 out of 5 stars"></div>
         <p class="rev-text">
           "Sulit ang stay dito. Hindi crowded. Comfortable, peaceful at may privacy. May clear water,
@@ -283,7 +283,7 @@
         </div>
       </div>
 
-      <div class="rev-card">
+      <div class="rev-card reveal reveal-d1">
         <div class="rev-stars" aria-label="5 out of 5 stars"></div>
         <p class="rev-text">
           "If you're looking for a place where your family can unplug, reconnect, and make beautiful
@@ -300,7 +300,7 @@
         </div>
       </div>
 
-      <div class="rev-card">
+      <div class="rev-card reveal reveal-d2">
         <div class="rev-stars" aria-label="5 out of 5 stars"></div>
         <p class="rev-text">
           "Great place for family and barkada where you can relax and enjoy the scenery. We stayed
@@ -329,7 +329,7 @@
         alt="Placeholder" loading="lazy">
     </div>
 
-    <div class="about-content">
+    <div class="about-content reveal">
       <span class="section-tag">Our Origin</span>
       <h2 class="section-heading section-heading--light" id="about-heading">
         The Little <em>Survivor</em> Story
@@ -354,7 +354,7 @@
   <section id="contact" aria-labelledby="contact-heading">
     <div class="contact-inner">
 
-      <div>
+      <div class="reveal">
         <span class="section-tag">Reach Out</span>
         <h2 class="section-heading" id="contact-heading">Plan Your <em>Escape</em></h2>
         <div class="section-divider"></div>
@@ -402,7 +402,7 @@
       </div>
 
       <!--forms-->
-      <div>
+      <div class="reveal reveal-d1">
         <form
           class="inquiry-form"
           id="inquiryForm"

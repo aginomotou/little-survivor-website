@@ -15,6 +15,37 @@ if (navbar) {
   );
 }
 
+var revealElements = document.querySelectorAll('.reveal');
+ 
+if (revealElements.length > 0) {
+  if ('IntersectionObserver' in window) {
+ 
+    var revealObserver = new IntersectionObserver(function (entries) {
+      
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+
+          revealObserver.unobserve(entry.target);
+        }
+      });
+ 
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+ 
+    revealElements.forEach(function (el) {
+      revealObserver.observe(el);
+    });
+ 
+  } else {
+    revealElements.forEach(function (el) {
+      el.classList.add('visible');
+    });
+  }
+}
+
 //faq
 var faqButtons = document.querySelectorAll(".faq-question");
 

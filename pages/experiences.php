@@ -40,11 +40,11 @@ $base = '../';
 
   <section class="experiences-intro">
     <div class="experiences-intro-inner">
-      <p class="experiences-intro-quote">
+      <p class="experiences-intro-quote reveal">
         &ldquo;The best memories are made when you stop planning and start doing.&rdquo;
       </p>
-      <div class="experiences-intro-line"></div>
-      <p class="experiences-intro-body">
+      <div class="experiences-intro-line reveal"></div>
+      <p class="experiences-intro-body reveal reveal-d1">
         Whether you&rsquo;re after the rush of an ATV along the shoreline, a quiet float
         on the water, or simply an afternoon of laughter with family &mdash; Little Survivor
         has something for every kind of guest. Below are the activities available during
@@ -54,7 +54,7 @@ $base = '../';
   </section>
 
   <!--atv-->
-  <div class="activity-block activity-block--light" id="atv">
+  <div class="activity-block activity-block--light reveal" id="atv">
     <div class="activity-img">
       <img
         src="https://placehold.co/600x400/png"
@@ -136,16 +136,16 @@ $base = '../';
   <section class="free-activities" aria-labelledby="free-heading">
     <div class="free-activities-inner">
 
-      <div class="free-activities-header">
+      <div class="free-activities-header reveal">
         <span class="section-tag">Complimentary for All Guests</span>
         <h2 class="section-heading" id="free-heading">Included in <em>Your Stay</em></h2>
         <div class="section-divider section-divider--center"></div>
         <p class="section-body section-body--center">
-          No extra charge, no sign-up needed &mdash; just show up and enjoy.
+          Curated for your enjoyment.
         </p>
       </div>
 
-      <div class="free-activities-grid">
+      <div class="free-activities-grid reveal">
 
         <div class="free-card">
           <div class="free-card-icon" aria-hidden="true">
