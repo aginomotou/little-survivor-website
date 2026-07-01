@@ -21,6 +21,22 @@ $base = '../';
     <?php include $base . '/assets/includes/navbar.php'; ?>
   </header>
 
+  <section class="hero" id="hero" aria-labelledby="book-hero-title">
+ 
+  <div class="hero-bg--book" role="presentation"></div>
+  <div class="hero-overlay" role="presentation"></div>
+ 
+  <div class="hero-content">
+    <p class="hero-eyebrow">Reserve Your Stay</p>
+    <h1 class="hero-title" id="book-hero-title">Book Your <em>Escape</em></h1>
+    <p class="hero-sub">
+      Choose your room, pick your dates, and add the experiences
+      that will make your stay unforgettable.
+    </p>
+  </div>
+ 
+</section>
+
   <footer>
     <?php include $base . '/assets/includes/footer.php'; ?>
   </footer>
