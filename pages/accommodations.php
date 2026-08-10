@@ -12,7 +12,8 @@ $base = '../';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Little Survivor Beach Resort">
   <link rel="icon" type="image/png" href="/assets/images/logo.png" sizes="16x16 32x32">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/global.css">
+  <link rel="stylesheet" href="/assets/css/pages/accommodations.css">
 </head>
 
 <body>
@@ -33,6 +34,7 @@ $base = '../';
         Each space has been designed to frame the sea, invite the breeze,
         and envelop you in the comfort of island living.
       </p>
+      <a href="#contact-page" class="btn-frosted">Send Us a Message</a>
     </div>
 
   </section>

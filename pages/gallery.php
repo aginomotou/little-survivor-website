@@ -13,7 +13,8 @@ $base = '../';
   <meta name="description" content="Little Survivor Beach Resort">
   <link rel="icon" type="image/png" href="/assets/images/logo.png" sizes="16x16 32x32">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/global.css">
+  <link rel="stylesheet" href="/assets/css/pages/gallery.css">
 </head>
 
 <body>
