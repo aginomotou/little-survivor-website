@@ -230,6 +230,7 @@
   z-index: 2;
   padding: 5rem 8rem;
   max-width: 42rem;
+  margin-left: 4rem;
 }
  
 .about-location-content .section-tag    { color: var(--gold-pale); }

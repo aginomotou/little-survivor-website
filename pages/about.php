@@ -48,7 +48,7 @@ $base = '../';
 
       <div class="strip-item">
         <span class="strip-item-label">Located in</span>
-        <span class="strip-item-value">Coron, Palawan</span>
+        <span class="strip-item-value">Botolan, Zambales</span>
       </div>
 
     </div>
