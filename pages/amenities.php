@@ -12,6 +12,7 @@ $base = '../';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Little Survivor Beach Resort">
   <link rel="icon" type="image/png" href="/assets/images/logo.png" sizes="16x16 32x32">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/global.css">
   <link rel="stylesheet" href="/assets/css/pages/amenities.css">
 </head>
@@ -100,9 +101,6 @@ $base = '../';
     </div>
  
     <div class="amen-block-content">
-      <div class="amen-block-icon" aria-hidden="true">
-        <i class="fa-solid fa-music"></i>
-      </div>
       <h3 class="amen-block-title">Entertainment <em>Area</em></h3>
       <div class="amen-block-divider"></div>
       <p class="amen-block-desc">
@@ -139,9 +137,6 @@ $base = '../';
     </div>
  
     <div class="amen-block-content">
-      <div class="amen-block-icon" aria-hidden="true">
-        <i class="fa-solid fa-utensils"></i>
-      </div>
       <h3 class="amen-block-title">Dining <em>Area</em></h3>
       <div class="amen-block-divider"></div>
       <p class="amen-block-desc">
@@ -178,9 +173,6 @@ $base = '../';
     </div>
  
     <div class="amen-block-content">
-      <div class="amen-block-icon" aria-hidden="true">
-        <i class="fa-solid fa-kitchen-set"></i>
-      </div>
       <h3 class="amen-block-title">Kitchen with <em>Chiller &amp; Freezer</em></h3>
       <div class="amen-block-divider"></div>
       <p class="amen-block-desc">
@@ -216,9 +208,6 @@ $base = '../';
     </div>
  
     <div class="amen-block-content">
-      <div class="amen-block-icon" aria-hidden="true">
-        <i class="fa-solid fa-shower"></i>
-      </div>
       <h3 class="amen-block-title">Comfort <em>Rooms</em></h3>
       <div class="amen-block-divider"></div>
       <p class="amen-block-desc">

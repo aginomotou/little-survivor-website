@@ -188,6 +188,108 @@
     </div>
   </section>
 
+  <!--amenities-->
+ <section id="amenities" class="amen-section" aria-labelledby="amen-heading">
+  <div class="amen-inner">
+ 
+    <!-- Header — same pattern as other sections -->
+    <div class="amen-header reveal">
+      <span class="section-tag">What Awaits You</span>
+      <h2 class="section-heading" id="amen-heading">Resort <em>Amenities</em></h2>
+      <div class="section-divider section-divider--center"></div>
+      <p class="section-body section-body--center">
+        Every comfort considered, every space thoughtfully arranged &mdash;
+        so all you focus on is the feeling of being exactly where you should be.
+      </p>
+    </div>
+ 
+    <!-- Two-column split: indoor list left, outdoor photos right -->
+    <div class="amen-body">
+ 
+      <!-- Left: indoor amenities as a clean factsheet -->
+      <div class="amen-indoors reveal">
+        <div class="amen-indoors-label">
+          <span class="section-tag">Common Areas</span>
+          <h3 class="amen-indoors-title">Inside the <em>Resort</em></h3>
+          <div class="section-divider"></div>
+        </div>
+        <ul class="amen-list" role="list">
+          <li class="amen-list-item">
+            <i class="fa-solid fa-music" aria-hidden="true"></i>
+            <div class="amen-list-content">
+              <div class="amen-list-name">Entertainment Area with KTV</div>
+              <p class="amen-list-desc">Open-air space for gatherings, celebrations, and late evenings.</p>
+            </div>
+          </li>
+          <li class="amen-list-item">
+            <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+            <div class="amen-list-content">
+              <div class="amen-list-name">Dining Area</div>
+              <p class="amen-list-desc">Covered beachside space for sharing meals throughout the day.</p>
+            </div>
+          </li>
+          <li class="amen-list-item">
+            <i class="fa-solid fa-kitchen-set" aria-hidden="true"></i>
+            <div class="amen-list-content">
+              <div class="amen-list-name">Shared Kitchen</div>
+              <p class="amen-list-desc">Equipped with a chiller and freezer for guest use.</p>
+            </div>
+          </li>
+          <li class="amen-list-item">
+            <i class="fa-solid fa-shower" aria-hidden="true"></i>
+            <div class="amen-list-content">
+              <div class="amen-list-name">Comfort Rooms</div>
+              <p class="amen-list-desc">2 toilets with shower and 1 dedicated shower room.</p>
+            </div>
+          </li>
+          <li class="amen-list-item">
+            <i class="fa-solid fa-volleyball" aria-hidden="true"></i>
+            <div class="amen-list-content">
+              <div class="amen-list-name">Beach Volleyball Court</div>
+              <p class="amen-list-desc">Regulation net on the sand, complimentary for all guests.</p>
+            </div>
+          </li>
+          <li class="amen-list-item">
+            <i class="fa-solid fa-water" aria-hidden="true"></i>
+            <div class="amen-list-content">
+              <div class="amen-list-name">Private Beach</div>
+              <p class="amen-list-desc">A quiet stretch of beachfront exclusively for guests.</p>
+            </div>
+          </li>
+        </ul>
+ 
+        <a href="/pages/amenities.php" class="btn-outline amen-explore-btn">
+          View All Amenities
+        </a>
+      </div>
+ 
+      <!-- Right: two stacked outdoor photos -->
+      <div class="amen-photos reveal reveal-d1">
+ 
+        <div class="amen-photo-item">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85"
+               alt="Private beach shoreline at Little Survivor Beach Resort"
+               loading="lazy">
+          <div class="amen-photo-caption">
+            <span>Private Beach</span>
+          </div>
+        </div>
+ 
+        <div class="amen-photo-item">
+          <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=800&q=85"
+               alt="Sunset over the beach"
+               loading="lazy">
+          <div class="amen-photo-caption">
+            <span>Sunset Every Evening</span>
+          </div>
+        </div>
+ 
+      </div>
+ 
+    </div>
+  </div>
+</section>
+
   <!--gallery-->
   <section id="gallery" aria-labelledby="gal-heading">
     <div class="gal-inner">
