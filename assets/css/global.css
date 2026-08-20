@@ -52,6 +52,10 @@ a { text-decoration: none; }
 ::-webkit-scrollbar-track { background: var(--ivory); }
 ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
 
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
 /* ==========================================================================
    NAVBAR
    ========================================================================== */
