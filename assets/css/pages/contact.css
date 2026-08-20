@@ -171,6 +171,16 @@
   padding-left: 0.85rem;
 }
 
+.form-privacy a {
+  color: var(--gold-deep);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.form-privacy a:hover {
+  color: var(--ocean);
+}
+
 .btn-submit {
   align-self: flex-start;
   font-family: "Cinzel", serif;

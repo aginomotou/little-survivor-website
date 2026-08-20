@@ -1,0 +1,150 @@
+<?php
+$activePage = 'terms';
+$base = '../';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Terms &amp; Conditions | Little Survivor Beach Resort</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Terms and Conditions for stays, activities, and bookings at Little Survivor Beach Resort, Botolan, Zambales.">
+  <link rel="icon" type="image/png" href="<?= $base ?>assets/images/logo.png" sizes="16x16 32x32">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="<?= $base ?>assets/css/global.css">
+  <link rel="stylesheet" href="<?= $base ?>assets/css/pages/legal.css">
+</head>
+
+<body>
+  <header>
+    <!--nav-->
+    <?php include $base . '/assets/includes/navbar.php'; ?>
+  </header>
+
+  <section class="legal-hero" aria-labelledby="terms-hero-title">
+    <div class="hero-content">
+      <p class="legal-hero-eyebrow">Fair &amp; Clear</p>
+      <h1 class="legal-hero-title" id="terms-hero-title">Terms &amp; <em>Conditions</em></h1>
+      <p class="legal-hero-meta">Last updated: August 20, 2026</p>
+    </div>
+  </section>
+
+  <div class="legal-wrap">
+
+    <nav class="legal-nav" aria-label="Legal pages">
+      <a href="<?= $base ?>pages/privacy-policy.php">Privacy Policy</a>
+      <a href="<?= $base ?>pages/terms.php" aria-current="page">Terms &amp; Conditions</a>
+      <a href="<?= $base ?>pages/cookie-policy.php">Cookie Policy</a>
+    </nav>
+
+    <section class="legal-section" aria-labelledby="terms-acceptance">
+      <h2 id="terms-acceptance">1. Acceptance of Terms</h2>
+      <p>
+        By using this website, submitting an inquiry, or staying at
+        Little Survivor Beach Resort (&ldquo;the Resort&rdquo;), you agree to these
+        Terms and Conditions. If you do not agree, please do not use the website
+        or the Resort&rsquo;s services.
+      </p>
+    </section>
+
+    <section class="legal-section" aria-labelledby="terms-bookings">
+      <h2 id="terms-bookings">2. Bookings, Rates &amp; Payment</h2>
+      <ol>
+        <li>Rates displayed on the website are in Philippine Pesos (&#8369;) and are subject to change without prior notice.</li>
+        <li>A booking is confirmed only when the Resort confirms availability and, where required, payment has been received.</li>
+        <li>Day trip and overnight rates are quoted per accommodation unit. Activity rates (such as ATV, banana boat, and dragon boat) are charged separately.</li>
+        <li>Payment is accepted via the methods announced by the Resort. Please contact us for current payment options.</li>
+      </ol>
+    </section>
+
+    <section class="legal-section" aria-labelledby="terms-checkin">
+      <h2 id="terms-checkin">3. Check-In &amp; Check-Out</h2>
+      <ol>
+        <li>Check-in is from 2:00 PM onwards; check-out is until 12:00 NN (noon).</li>
+        <li>Early check-in and late check-out may be available on request, subject to availability and prior arrangement.</li>
+        <li>A valid ID is required for check-in. The Resort reserves the right to refuse entry to anyone who is disorderly or fails to comply with house rules.</li>
+      </ol>
+    </section>
+
+    <section class="legal-section" aria-labelledby="terms-cancellation">
+      <h2 id="terms-cancellation">4. Cancellation &amp; Rescheduling</h2>
+      <p>
+        Please contact us directly for cancellation or rescheduling arrangements.
+        We understand that plans change and handle each situation with flexibility,
+        but fees may apply for late cancellations or no-shows depending on the booking.
+      </p>
+    </section>
+
+    <section class="legal-section" aria-labelledby="terms-conduct">
+      <h2 id="terms-conduct">5. Guest Conduct</h2>
+      <ol>
+        <li>Guests are responsible for their belongings. The Resort is not liable for lost, damaged, or stolen items.</li>
+        <li>Please respect the property, other guests, and the environment. Excessive noise after quiet hours is not permitted.</li>
+        <li>Guests who cause damage to Resort property will be charged for repair or replacement.</li>
+        <li>Open flames, smoking inside accommodation units, and illegal activity are strictly prohibited.</li>
+      </ol>
+    </section>
+
+    <section class="legal-section" aria-labelledby="terms-activities">
+      <h2 id="terms-activities">6. Activities &amp; Safety</h2>
+      <ol>
+        <li>Water and beach activities are undertaken at your own risk.</li>
+        <li>Life jackets must be worn for boat and water activities, and children must be supervised by an adult at all times.</li>
+        <li>The Resort may cancel or modify activities due to weather, safety conditions, or operational needs, and will not be liable for resulting inconvenience.</li>
+        <li>Follow the instructions of Resort staff during all activities.</li>
+      </ol>
+    </section>
+
+    <section class="legal-section" aria-labelledby="terms-liability">
+      <h2 id="terms-liability">7. Limitation of Liability</h2>
+      <p>
+        To the fullest extent permitted by law, the Resort, its owners, and staff
+        shall not be liable for any indirect, incidental, or consequential damages
+        arising from your use of the website, the Resort, or its services &mdash;
+        including injuries sustained during beach or water activities, natural
+        occurrences, or events beyond our reasonable control.
+      </p>
+    </section>
+
+    <section class="legal-section" aria-labelledby="terms-site">
+      <h2 id="terms-site">8. Website Content</h2>
+      <ol>
+        <li>All content on this website &mdash; text, photographs, logos, and design &mdash; is the property of the Resort unless otherwise stated.</li>
+        <li>Rates, availability, amenities, and descriptions may change. Images are for representation and may not exactly reflect current conditions.</li>
+        <li>You may not copy, reproduce, or reuse website content without our written permission.</li>
+      </ol>
+    </section>
+
+    <section class="legal-section" aria-labelledby="terms-law">
+      <h2 id="terms-law">9. Governing Law</h2>
+      <p>
+        These Terms are governed by the laws of the Republic of the Philippines.
+        Any dispute shall be subject to the exclusive jurisdiction of the courts
+        of Zambales, Philippines.
+      </p>
+    </section>
+
+    <section class="legal-section" aria-labelledby="terms-contact">
+      <h2 id="terms-contact">10. Contact</h2>
+      <p>
+        Questions about these Terms? Reach us at:<br>
+        Little Survivor Beach Resort &middot; Purok 8, Barangay Panan, Botolan, 2202 Zambales, Philippines<br>
+        <a href="mailto:littlesurvivorbeachresort@gmail.com">littlesurvivorbeachresort@gmail.com</a>
+        &middot; <a href="tel:+639192601511">+63 919 260 1511</a>
+      </p>
+    </section>
+
+    <p class="legal-updated">Last updated: August 20, 2026</p>
+
+  </div>
+
+  <footer>
+    <?php include $base . '/assets/includes/footer.php'; ?>
+  </footer>
+
+  <script src="<?= $base ?>assets/js/main.js"></script>
+</body>
+
+</html>

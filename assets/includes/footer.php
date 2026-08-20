@@ -49,9 +49,9 @@
       <nav class="footer-nav-col" aria-label="Legal Links">
         <p class="footer-col-label">Legal</p>
         <ul class="footer-links">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms &amp; Conditions</a></li>
-          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="<?= $base ?>pages/privacy-policy.php">Privacy Policy</a></li>
+          <li><a href="<?= $base ?>pages/terms.php">Terms &amp; Conditions</a></li>
+          <li><a href="<?= $base ?>pages/cookie-policy.php">Cookie Policy</a></li>
         </ul>
       </nav>
     </div>

@@ -1,0 +1,163 @@
+<?php
+$activePage = 'privacy-policy';
+$base = '../';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy | Little Survivor Beach Resort</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for Little Survivor Beach Resort — how we collect, use, and protect your personal information.">
+  <link rel="icon" type="image/png" href="<?= $base ?>assets/images/logo.png" sizes="16x16 32x32">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="<?= $base ?>assets/css/global.css">
+  <link rel="stylesheet" href="<?= $base ?>assets/css/pages/legal.css">
+</head>
+
+<body>
+  <header>
+    <!--nav-->
+    <?php include $base . '/assets/includes/navbar.php'; ?>
+  </header>
+
+  <section class="legal-hero" aria-labelledby="privacy-hero-title">
+    <div class="hero-content">
+      <p class="legal-hero-eyebrow">Our Promise to You</p>
+      <h1 class="legal-hero-title" id="privacy-hero-title">Privacy <em>Policy</em></h1>
+      <p class="legal-hero-meta">Last updated: August 20, 2026</p>
+    </div>
+  </section>
+
+  <div class="legal-wrap">
+
+    <nav class="legal-nav" aria-label="Legal pages">
+      <a href="<?= $base ?>pages/privacy-policy.php" aria-current="page">Privacy Policy</a>
+      <a href="<?= $base ?>pages/terms.php">Terms &amp; Conditions</a>
+      <a href="<?= $base ?>pages/cookie-policy.php">Cookie Policy</a>
+    </nav>
+
+    <section class="legal-section" aria-labelledby="privacy-intro">
+      <h2 id="privacy-intro">1. Who We Are</h2>
+      <p>
+        Little Survivor Beach Resort (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
+        operates the website littlesurvivorbeachresort.com and is located at
+        Purok 8, Barangay Panan, Botolan, 2202 Zambales, Philippines.
+        This Privacy Policy explains how we collect, use, and protect your personal
+        information when you visit our website or contact us.
+      </p>
+    </section>
+
+    <section class="legal-section" aria-labelledby="privacy-collect">
+      <h2 id="privacy-collect">2. Information We Collect</h2>
+      <p>We collect only the information you choose to give us:</p>
+      <ul>
+        <li><strong>Inquiry form data</strong> &mdash; first name, last name, email address, inquiry topic, and the message you send us through our contact forms.</li>
+        <li><strong>Technical data</strong> &mdash; limited, non-identifying information such as the pages you visit and your general location, used only to keep the site secure and reliable.</li>
+      </ul>
+      <p>
+        We do <strong>not</strong> collect payment card details, government-issued IDs,
+        or sensitive personal information through this website.
+      </p>
+    </section>
+
+    <section class="legal-section" aria-labelledby="privacy-use">
+      <h2 id="privacy-use">3. How We Use Your Information</h2>
+      <ul>
+        <li>To respond to your inquiries about rates, availability, activities, and bookings.</li>
+        <li>To send you a confirmation that we received your message.</li>
+        <li>To improve our website and guest experience.</li>
+        <li>To detect and prevent spam or abuse of our contact forms.</li>
+      </ul>
+      <p>We will never sell your personal information, and we never share it with third parties for marketing purposes.</p>
+    </section>
+
+    <section class="legal-section" aria-labelledby="privacy-share">
+      <h2 id="privacy-share">4. Who We Share It With</h2>
+      <p>Your information is shared only as necessary to operate the resort and respond to you:</p>
+      <ul>
+        <li><strong>Our staff</strong> &mdash; your inquiry is sent to the resort&rsquo;s email inbox so our team can reply to you.</li>
+        <li><strong>Email and hosting providers</strong> &mdash; your details pass through secure third-party services (such as Google&rsquo;s Gmail and our web host) solely to deliver messages and run the website.</li>
+        <li><strong>Legal obligations</strong> &mdash; we may disclose information if required by Philippine law or a valid legal request.</li>
+      </ul>
+    </section>
+
+    <section class="legal-section" aria-labelledby="privacy-retention">
+      <h2 id="privacy-retention">5. How Long We Keep Your Information</h2>
+      <p>
+        Inquiries are kept only as long as needed to serve you &mdash; generally up to
+        two years after your last contact &mdash; after which they are deleted.
+        You may ask us to delete your inquiry at any time (see Section 7).
+      </p>
+    </section>
+
+    <section class="legal-section" aria-labelledby="privacy-security">
+      <h2 id="privacy-security">6. How We Protect Your Information</h2>
+      <p>
+        Our website is served over HTTPS, and we take reasonable technical and
+        organizational measures to protect your data, including spam protection,
+        rate limiting, and restricted access to guest records. No method of
+        transmission over the internet is 100% secure, but we work hard to
+        safeguard the information you entrust to us.
+      </p>
+    </section>
+
+    <section class="legal-section" aria-labelledby="privacy-rights">
+      <h2 id="privacy-rights">7. Your Rights</h2>
+      <p>Under the Philippine Data Privacy Act of 2012 (R.A. 10173), you have the right to:</p>
+      <ul>
+        <li>Be informed of what personal data we hold about you.</li>
+        <li>Request access to, correction of, or deletion of your data.</li>
+        <li>Withdraw consent and object to processing.</li>
+        <li>File a complaint with the National Privacy Commission (NPC).</li>
+      </ul>
+      <p>
+        To exercise any of these rights, email us at
+        <a href="mailto:littlesurvivorbeachresort@gmail.com">littlesurvivorbeachresort@gmail.com</a>
+        and we will respond within a reasonable time.
+      </p>
+    </section>
+
+    <section class="legal-section" aria-labelledby="privacy-cookies">
+      <h2 id="privacy-cookies">8. Cookies</h2>
+      <p>
+        We do not set tracking cookies ourselves. Some third-party services we use
+        (such as embedded Google Maps, Google Fonts, and Font Awesome) may place
+        cookies on your device. See our
+        <a href="<?= $base ?>pages/cookie-policy.php">Cookie Policy</a> for details.
+      </p>
+    </section>
+
+    <section class="legal-section" aria-labelledby="privacy-changes">
+      <h2 id="privacy-changes">9. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. The &ldquo;last updated&rdquo;
+        date at the top of this page reflects the most recent revision. Continued use of
+        the website after changes are posted means you accept the revised policy.
+      </p>
+    </section>
+
+    <section class="legal-section" aria-labelledby="privacy-contact">
+      <h2 id="privacy-contact">10. Contact Us</h2>
+      <p>
+        Questions about this policy or your personal data? Reach us at:<br>
+        Little Survivor Beach Resort &middot; Purok 8, Barangay Panan, Botolan, 2202 Zambales, Philippines<br>
+        <a href="mailto:littlesurvivorbeachresort@gmail.com">littlesurvivorbeachresort@gmail.com</a>
+        &middot; <a href="tel:+639192601511">+63 919 260 1511</a>
+      </p>
+    </section>
+
+    <p class="legal-updated">Last updated: August 20, 2026</p>
+
+  </div>
+
+  <footer>
+    <?php include $base . '/assets/includes/footer.php'; ?>
+  </footer>
+
+  <script src="<?= $base ?>assets/js/main.js"></script>
+</body>
+
+</html>

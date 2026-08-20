@@ -1,0 +1,10 @@
+# Build output for Vercel
+/dist/
+
+# Vercel CLI local cache
+/.vercel/
+
+# Backend runtime (never commit)
+backend/vendor/
+backend/.env
+backend/node_modules/

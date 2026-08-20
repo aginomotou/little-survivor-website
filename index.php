@@ -606,7 +606,8 @@
 
           <p class="form-privacy">
             Your details are used only to respond to your inquiry and will never be shared with
-            third parties. See our Privacy Policy.
+            third parties. See our
+            <a href="<?= $base ?>pages/privacy-policy.php">Privacy Policy</a>.
           </p>
 
           <div class="form-feedback" id="formFeedback" role="alert" aria-live="assertive"></div>

@@ -14,6 +14,17 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->appendToGroup('api', \App\Http\Middleware\CheckAllowedOrigin::class);
+
+        // Trust proxies/CDNs in front of the app (Vercel, nginx, Apache mod_proxy, etc.)
+        // so $request->ip() and $request->getSchemeAndHttpHost() reflect the real
+        // client and public origin. Without this, every visitor behind the proxy
+        // shares the proxy's IP and the per-IP inquiry rate limit is useless.
+        $middleware->trustProxies(
+            at: '*',
+            headers: Request::HEADER_X_FORWARDED_FOR
+                | Request::HEADER_X_FORWARDED_HOST
+                | Request::HEADER_X_FORWARDED_PROTO,
+        );
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->shouldRenderJsonWhen(

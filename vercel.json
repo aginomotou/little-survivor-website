@@ -1,0 +1,13 @@
+{
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/backend/public/api/:path*",
+      "destination": "https://YOUR-RAILWAY-APP.up.railway.app/api/:path*"
+    },
+    {
+      "source": "/:path*.php",
+      "destination": "/:path*.html"
+    }
+  ]
+}
