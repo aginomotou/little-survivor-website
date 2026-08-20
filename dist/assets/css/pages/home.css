@@ -38,6 +38,12 @@
   gap: 2px;
 }
 
+.exp-cta {
+  display: none;
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
 .exp-card {
   position: relative;
   overflow: hidden;
@@ -393,7 +399,7 @@
   background: var(--dark);
 }
 
-.gal-iner {
+.gal-inner {
   max-width: 81.25rem;
   margin: auto;
 }
@@ -883,6 +889,106 @@
   #reviews::before {
     font-size: 12rem;
   }
+
+  /* sections keep the tablet gutter */
+  #about,
+  #amenities,
+  #experiences,
+  #accommodations,
+  #gallery,
+  #reviews,
+  #contact {
+    padding: 4rem 2rem;
+  }
+
+  /* amenities: list on top, photos side by side below */
+  .amen-body {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  /* photos appear first, before the "Inside the Resort" list */
+  .amen-indoors {
+    order: 2;
+  }
+
+  .amen-photos {
+    order: 1;
+  }
+
+  .amen-photo-item img {
+    height: 14rem;
+  }
+
+  .amen-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  /* experiences */
+  .exp-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  /* cards first on tablet/mobile: hide the header CTA, show it below the grid */
+  .exp-header .btn-outline {
+    display: none;
+  }
+
+  .exp-cta {
+    display: block;
+  }
+
+  /* 2-column layout on tablet */
+  .exp-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1.5rem;
+  }
+
+  /* First card spans across both columns */
+  .exp-card:nth-child(1) {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Remaining cards fill the 2-column grid */
+  .exp-card:not(:nth-child(1)) {
+    grid-column: auto;
+    grid-row: auto;
+    aspect-ratio: 4 / 3;
+    min-height: 14rem;
+  }
+
+  /* accommodations */
+  .acc-grid { grid-template-columns: 1fr 1fr; }
+
+  /* gallery: even 2-column grid */
+  .gal-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: unset;
+  }
+  .gal-item {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+    aspect-ratio: 4 / 3;
+  }
+
+  /* reviews */
+  .rev-grid { grid-template-columns: 1fr 1fr; }
+
+  /* contact */
+  .contact-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
 }
 
 /* ── Mobile  ≤ 560px ── */
@@ -923,7 +1029,86 @@
     display: none;
   }
 
+  /* sections keep the mobile gutter */
+  #about,
+  #amenities,
+  #experiences,
+  #accommodations,
+  #gallery,
+  #reviews,
+  #contact {
+    padding: 3.5rem 1.25rem;
+  }
+
+  /* amenities */
+  .amen-header {
+    margin-bottom: 3rem;
+  }
+
+  .amen-photo-item img {
+    height: 12rem;
+  }
+
+  .amen-photos {
+    grid-template-columns: 1fr;
+  }
+
+  .amen-explore-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* experiences */
+  .exp-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  /* Single stacked column on mobile */
+  .exp-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+  }
+
+  /* Every card is full-width */
+  .exp-grid > *,
+  .exp-card,
+  .exp-card:nth-child(1) {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    min-height: 14rem;
+  }
+
+  .exp-card h3,
+  .exp-title {
+    font-size: 1.4rem;
+  }
+  .exp-desc { max-height: none; }
+
+  /* accommodations */
+  .acc-grid { grid-template-columns: 1fr; }
+
+  /* gallery: single column */
+  .gal-grid { grid-template-columns: 1fr; }
+  .gal-item { aspect-ratio: 16 / 9; }
+
+  .gal-header {
+    margin-bottom: 2.5rem;
+  }
+
+  /* reviews */
+  .rev-grid { grid-template-columns: 1fr; }
+  .rev-text { font-size: 1rem; }
+
   /* contact form */
+  .form-row { grid-template-columns: 1fr; }
   .contact-inner {
     gap: 2.5rem;
   }

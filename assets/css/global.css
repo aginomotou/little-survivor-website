@@ -572,6 +572,29 @@ footer {
   transform: translateY(-2px);
 }
 
+.btn-outline--filled {
+  display: inline-block;
+  font-family: "Cinzel", serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.26rem;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--gold);
+  border: 1.5px solid var(--gold);
+  padding: 0.9em 2.2em;
+  transition:
+    background 0.28s,
+    color 0.28s,
+    transform 0.2s;
+}
+
+.btn-outline--filled:hover {
+  background: var(--gold-deep);
+  border-color: var(--gold-deep);
+  transform: translateY(-2px);
+}
+
 .btn-ghost--dark {
   display: inline-block;
   font-family: "Cinzel", serif;
@@ -640,21 +663,10 @@ footer {
   .stat-num     { font-size: 2.4rem; }
  
   /* sections */
-  #amenities,
-  #experiences,
-  #accommodations,
-  #gallery,
-  #reviews,
-  #contact,
   .contact-main,
   .faq-section    { padding: 4rem 2rem; }
- 
-  /* amenities */
-  .amen-body              { grid-template-columns: 1fr; gap: 3rem; }
-  .amen-photo-item img    { height: 14rem; }
- 
-  /* experiences */
-  .exp-header,
+
+  /* experiences (subpage) */
   .experiences-header {
     display: flex;
     flex-direction: column;
@@ -662,55 +674,7 @@ footer {
     text-align: center;
   }
 
-  .exp-header .btn-outline,
-  .exp-header .btn-primary,
-  .exp-header a {
-    margin: 1.5rem auto 0;
-    display: inline-block;
-    text-align: center;
-  }
-
-  /* 2-column layout on tablet */
-  .exp-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 1.5rem;
-  }
-
-  /* First card spans across both columns */
-  .exp-card:nth-child(1) {
-    grid-column: 1 / -1;
-    grid-row: auto;
-    aspect-ratio: 16 / 9;
-  }
-
-  /* Remaining cards fill the 2-column grid */
-  .exp-card:not(:nth-child(1)) {
-    grid-column: auto;
-    grid-row: auto;
-    aspect-ratio: 4 / 3;
-    min-height: 14rem;
-  }
- 
-  /* accommodations */
-  .acc-grid { grid-template-columns: 1fr 1fr; }
- 
-  /* gallery */
-  .gal-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: unset; }
-  .gal-item { grid-column: span 1 !important; grid-row: span 1 !important; aspect-ratio: 4 / 3; }
- 
-  /* reviews */
-  .rev-grid { grid-template-columns: 1fr 1fr; }
- 
-  /* story */
-  #story { grid-template-columns: 1fr; }
-  .story-img { min-height: 22rem; }
-  .story-img::after { background: linear-gradient(to top, var(--ocean-deep) 0%, transparent 55%); }
-  .story-content { padding: 3.5rem 2rem; }
- 
   /* contact page */
-  .contact-inner      { grid-template-columns: 1fr; gap: 3rem; }
   .contact-main-inner { grid-template-columns: 1fr; gap: 3.5rem; }
  
   /* footer */
@@ -736,9 +700,7 @@ footer {
   .hero-title      { font-size: 2.4rem; }
   .hero-sub        { font-size: 0.875rem; }
   .page-hero-title { font-size: 2.4rem; }
- 
-  .amen-photo-item img    { height: 12rem; }
-  .exp-header,
+
   .experiences-header {
     display: flex;
     flex-direction: column;
@@ -746,46 +708,6 @@ footer {
     text-align: center;
   }
 
-  .exp-header .btn-outline,
-  .exp-header .btn-primary,
-  .exp-header a {
-    margin: 1.25rem auto 0;
-    display: inline-block;
-    text-align: center;
-  }
-
-  /* Single stacked column on mobile */
-  .exp-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    width: 100%;
-  }
-
-  /* Every card is full-width */
-  .exp-grid > *,
-  .exp-card,
-  .exp-card:nth-child(1) {
-    grid-column: auto;
-    grid-row: auto;
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    min-height: 14rem;
-  }
-
-  .exp-card h3,
-  .exp-title {
-    font-size: 1.4rem;
-  }
-  .exp-desc     { max-height: none; }
-  .acc-grid     { grid-template-columns: 1fr; }
-  .gal-grid     { grid-template-columns: 1fr; }
-  .gal-item     { aspect-ratio: 16 / 9; }
-  .rev-grid     { grid-template-columns: 1fr; }
-  .rev-text     { font-size: 1rem; }
-  .form-row     { grid-template-columns: 1fr; }
-  .exp-header   { flex-direction: column; align-items: flex-start; }
- 
   .footer-columns {
     grid-template-columns: 1fr;
     gap: 2rem;

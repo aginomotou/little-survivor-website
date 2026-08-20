@@ -50,7 +50,7 @@
         </div>
         <div class="reveal reveal-d2">
           <a href="pages/experiences.php" class="btn-outline">View All Experiences</a>
-       </div>
+        </div>
       </div>
 
       <div class="exp-grid reveal">
@@ -120,6 +120,10 @@
           </div>
         </div>
 
+      </div>
+
+      <div class="exp-cta reveal">
+        <a href="pages/experiences.php" class="btn-outline">View All Experiences</a>
       </div>
 
     </div>
@@ -260,7 +264,7 @@
           </li>
         </ul>
  
-        <a href="/pages/amenities.php" class="btn-outline amen-explore-btn">
+        <a href="/pages/amenities.php" class="btn-outline--filled amen-explore-btn">
           View All Amenities
         </a>
       </div>

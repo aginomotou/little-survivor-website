@@ -10,7 +10,7 @@
 .acc-strip {
   background: var(--ocean-deep);
   border-bottom: 1px solid rgba(184, 150, 106, 0.15);
-  padding: 1.75rem 3.75rem;
+  padding: 2.75rem 3.75rem;
 }
  
 .acc-strip-inner {
@@ -19,6 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0;
 }
  
 .acc-strip .strip-item {
@@ -29,9 +30,9 @@
  
 .acc-strip .strip-item-label {
   font-family: 'Cinzel', serif;
-  font-size: 0.6rem;
+  font-size: 0.52rem;
   font-weight: 400;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.4);
   display: block;
@@ -40,7 +41,7 @@
  
 .acc-strip .strip-item-value {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 300;
   color: var(--gold-pale);
   display: block;
@@ -336,4 +337,118 @@
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   RESPONSIVE — tablet & mobile
+   ========================================================================== */
+
+/* ── Tablet  ≤ 960px ── */
+@media (max-width: 60rem) {
+  .acc-strip {
+    padding: 2rem 2rem;
+  }
+
+  .acc-strip .strip-item {
+    padding: 0 1.25rem;
+  }
+
+  .acc-section {
+    padding: 4.5rem 2rem;
+  }
+
+  .acc-section-header {
+    margin-bottom: 3.5rem;
+  }
+
+  /* accommodation blocks stack: gallery on top, details below */
+  .acc-block {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .acc-block--reverse .acc-block-gallery,
+  .acc-block--reverse .acc-block-details {
+    order: initial;
+  }
+
+  .acc-block-name {
+    font-size: 2.2rem;
+  }
+
+  .acc-block-separator {
+    margin-bottom: 5rem;
+  }
+
+  .acc-cta {
+    padding: 5rem 2rem;
+  }
+
+  .acc-cta-title {
+    font-size: 2.4rem;
+  }
+}
+
+/* ── Mobile  ≤ 560px ── */
+@media (max-width: 35rem) {
+  .acc-strip {
+    padding: 1.75rem 1rem;
+  }
+
+  .acc-strip-inner {
+    flex-wrap: wrap;
+    gap: 1rem 0;
+  }
+
+  .acc-strip .strip-item {
+    flex: 1 1 40%;
+    padding: 0 0.5rem;
+  }
+
+  .acc-strip .strip-item-divider {
+    display: none;
+  }
+
+  .acc-section {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .acc-section-header {
+    margin-bottom: 3rem;
+  }
+
+  .acc-block {
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .acc-block-name {
+    font-size: 2rem;
+  }
+
+  .acc-block-desc {
+    font-size: 0.85rem;
+  }
+
+  .acc-block-price-main {
+    font-size: 1.75rem;
+  }
+
+  /* full-width action buttons on mobile */
+  .acc-block-cta .btn-primary,
+  .acc-block-cta .btn-outline,
+  .acc-cta-buttons .btn-primary,
+  .acc-cta-buttons .btn-ghost {
+    width: 100%;
+    text-align: center;
+  }
+
+  .acc-cta {
+    padding: 4rem 1.25rem;
+  }
+
+  .acc-cta-title {
+    font-size: 2rem;
+  }
 }
