@@ -215,8 +215,16 @@ document.addEventListener('keydown', function (e) {
 var inquiryForm = document.getElementById("inquiryForm");
 
 if (inquiryForm) {
-  var pagePath = window.location.pathname;
-  var siteBase = pagePath.replace(/\/pages\/[^/]+\.php$/, "").replace(/\/[^/]+\.php$/, "").replace(/\/+$/, "");
+  // The site root is derived from this script tag's own src ("<base>/assets/js/main.js").
+  // This works on every page regardless of pathname (e.g. after Vercel redirects
+  // /pages/x.php to /pages/x) and under subpath deployments.
+  var scripts = document.getElementsByTagName("script");
+  var thisScript = scripts[scripts.length - 1];
+  var scriptSrc = thisScript ? thisScript.src : "";
+  var SCRIPT_MARKER = "/assets/js/main.js";
+  var siteBase = scriptSrc.indexOf(SCRIPT_MARKER) !== -1
+    ? scriptSrc.substring(0, scriptSrc.indexOf(SCRIPT_MARKER))
+    : "";
   var API_ENDPOINT = window.location.origin + siteBase +
     "/backend/public/api/inquiries";
 
