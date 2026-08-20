@@ -10,7 +10,9 @@ return [
     | "paths" defines the routes that are CORS-enabled. "allowed_origins"
     | lists the frontend origins (scheme + host, no trailing slash) that may
     | call the API. A comma-separated list can be supplied via the
-    | CORS_ALLOWED_ORIGINS environment variable, or "*" to allow any origin.
+    | CORS_ALLOWED_ORIGINS environment variable, "*" to allow any origin, or
+    | "https://*.domain" to allow any subdomain of a domain (e.g. Vercel
+    | deployments).
     |
     */
 
