@@ -31,11 +31,18 @@ class InquiryController extends Controller
 
         $inquiry = Inquiry::create($request->validated());
 
-        Mail::to(config('mail.staff_alert_address'))
-            ->queue(new StaffInquiryNotification($inquiry));
+        // Queue the notifications so SMTP never blocks the response. A worker
+        // (see Procfile) sends them in the background; if that fails it is
+        // logged and retried, never surfaced to the guest.
+        try {
+            Mail::to(config('mail.staff_alert_address'))
+                ->queue(new StaffInquiryNotification($inquiry));
 
-        Mail::to($inquiry->email)
-            ->queue(new GuestInquiryConfirmation($inquiry));
+            Mail::to($inquiry->email)
+                ->queue(new GuestInquiryConfirmation($inquiry));
+        } catch (\Throwable $e) {
+            report($e);
+        }
 
         return $this->success();
     }
