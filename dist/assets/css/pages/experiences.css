@@ -356,3 +356,106 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* ── Tablet  ≤ 960px ── */
+@media (max-width: 60rem) {
+  .experiences-intro {
+    padding: 4rem 2rem;
+  }
+
+  /* activity blocks stack: image on top, content below */
+  .activity-block {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-block--reverse {
+    direction: ltr;
+  }
+
+  .activity-img {
+    min-height: 18rem;
+  }
+
+  .activity-content {
+    padding: 3rem 2rem;
+  }
+
+  .free-activities {
+    padding: 4rem 2rem;
+  }
+
+  .free-activities-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .experiences-cta {
+    padding: 5rem 2rem;
+  }
+
+  .experiences-cta-title {
+    font-size: 2.4rem;
+  }
+}
+
+/* ── Mobile  ≤ 560px ── */
+@media (max-width: 35rem) {
+  .experiences-intro {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .experiences-intro-quote {
+    font-size: 1.4rem;
+  }
+
+  .activity-img {
+    min-height: 15rem;
+  }
+
+  .activity-content {
+    padding: 2.75rem 1.5rem;
+  }
+
+  .activity-title {
+    font-size: 2rem;
+  }
+
+  .activity-rate {
+    font-size: 0.55rem;
+  }
+
+  .activity-price {
+    font-size: 1.5rem;
+  }
+
+  .free-activities {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .free-activities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .free-activities-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .experiences-cta {
+    padding: 4rem 1.25rem;
+  }
+
+  .experiences-cta-title {
+    font-size: 2rem;
+  }
+
+  .experiences-cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .experiences-cta-buttons .btn-primary,
+  .experiences-cta-buttons .btn-ghost--dark {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -403,3 +403,161 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* ── Tablet  ≤ 960px ── */
+@media (max-width: 60rem) {
+  .about-strip {
+    padding: 1.5rem 2rem;
+  }
+
+  .strip-item {
+    padding: 0 1.25rem;
+  }
+
+  /* story stacks: image on top, content below */
+  .about-story {
+    grid-template-columns: 1fr;
+  }
+
+  .about-story-img {
+    min-height: 20rem;
+  }
+
+  .about-story-img::after {
+    background: linear-gradient(to top, var(--ivory) 0%, transparent 55%);
+  }
+
+  .about-story-content {
+    padding: 3.5rem 2rem;
+  }
+
+  .about-philosophy {
+    padding: 4rem 2rem;
+  }
+
+  .about-pillars {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  /* location: content spans full width over the image */
+  .about-location-content {
+    margin-left: 0;
+    max-width: none;
+    padding: 4rem 2.5rem;
+  }
+
+  .about-location-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(10, 20, 28, 0.75) 0%,
+      rgba(10, 20, 28, 0.25) 55%,
+      transparent 100%
+    );
+  }
+
+  /* team stacks: image on top, content below */
+  .about-team {
+    grid-template-columns: 1fr;
+  }
+
+  .about-team-img {
+    min-height: 20rem;
+  }
+
+  .about-team-img::before {
+    background: linear-gradient(to top, #f0e8d8 0%, transparent 55%);
+  }
+
+  .about-team-content {
+    padding: 3.5rem 2rem;
+  }
+
+  .about-cta {
+    padding: 5rem 2rem;
+  }
+
+  .about-cta-title {
+    font-size: 2.4rem;
+  }
+}
+
+/* ── Mobile  ≤ 560px ── */
+@media (max-width: 35rem) {
+  .about-strip {
+    padding: 1.25rem 1rem;
+  }
+
+  .strip-item {
+    padding: 0 0.75rem;
+  }
+
+  .strip-item-label {
+    font-size: 0.52rem;
+    letter-spacing: 0.25em;
+  }
+
+  .strip-item-value {
+    font-size: 0.9rem;
+  }
+
+  .about-story-img {
+    min-height: 16rem;
+  }
+
+  .about-story-content {
+    padding: 2.75rem 1.5rem;
+  }
+
+  .about-philosophy {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .about-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .about-pillar {
+    padding: 2rem 1.5rem;
+  }
+
+  .about-location-content {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-location-fact {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .about-location-fact-divider {
+    display: none;
+  }
+
+  .about-team-img {
+    min-height: 16rem;
+  }
+
+  .about-team-content {
+    padding: 2.75rem 1.5rem;
+  }
+
+  .about-cta {
+    padding: 4rem 1.25rem;
+  }
+
+  .about-cta-title {
+    font-size: 2rem;
+  }
+
+  .about-cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .about-cta-buttons .btn-primary,
+  .about-cta-buttons .btn-ghost {
+    width: 100%;
+    text-align: center;
+  }
+}
