@@ -393,3 +393,62 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────────────────────────────── */
+@media (max-width: 60rem) {
+  .amen-strip {
+    padding: 1.5rem 1rem;
+  }
+  .amen-strip-inner {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .amen-strip .strip-item {
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+  .amen-strip .strip-item-divider {
+    display: none;
+  }
+
+  .amen-intro {
+    padding: 3.5rem 1.25rem;
+  }
+  .amen-block {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    width: 100%;
+  }
+  .amen-block--reverse {
+    direction: ltr;
+    flex-direction: column;
+  }
+  .amen-block-img {
+    width: 100%;
+    min-height: 14rem;
+    height: 16rem;
+  }
+  .amen-block-content {
+    width: 100%;
+    padding: 2.25rem 1.5rem;
+  }
+  .amen-block-title {
+    font-size: 1.85rem;
+  }
+  .amen-outdoors {
+    padding: 3.5rem 1.25rem;
+  }
+  .amen-cta {
+    padding: 4rem 1.25rem;
+  }
+}
+ 
+@media (max-width: 35rem) {
+  .amen-strip .strip-item   { flex: 1 1 100%; text-align: center; }
+  .amen-outdoors-grid       { grid-template-columns: 1fr; }
+  .amen-cta-title           { font-size: 2rem; }
+  .amen-cta-buttons         { flex-direction: column; align-items: center; }
+}

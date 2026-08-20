@@ -669,8 +669,19 @@ footer {
   .contact-main-inner { grid-template-columns: 1fr; gap: 3.5rem; }
  
   /* footer */
-  .footer-top { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
-  footer      { padding: 3.5rem 2rem 2rem; }
+  .footer-columns {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem 1.5rem;
+  }
+  .footer-inner {
+    padding: 3.5rem 1.5rem 0;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+    padding: 1.5rem;
+  }
  
   .section-heading { font-size: 2.4rem; }
 }
@@ -694,8 +705,22 @@ footer {
   .form-row     { grid-template-columns: 1fr; }
   .exp-header   { flex-direction: column; align-items: flex-start; }
  
-  .footer-top    { grid-template-columns: 1fr; }
-  .footer-bottom { flex-direction: column; align-items: flex-start; }
+  .footer-columns {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footer-about-text {
+    max-width: 100%;
+  }
+  .footer-inner {
+    padding: 3rem 1.25rem 0;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 1.5rem 1.25rem;
+  }
  
   .section-heading { font-size: 2rem; }
 }
