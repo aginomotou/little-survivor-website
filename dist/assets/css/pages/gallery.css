@@ -25,7 +25,15 @@
   margin-bottom: 3.5rem;
   border-bottom: 1px solid rgba(184, 150, 106, 0.2);
   padding-bottom: 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.gallery-filter-bar::-webkit-scrollbar {
+  display: none;
 }
 
 .gallery-filter-btn {
@@ -45,6 +53,7 @@
     color 0.25s,
     border-color 0.25s;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .gallery-filter-btn:hover {
