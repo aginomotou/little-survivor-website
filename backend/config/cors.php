@@ -20,12 +20,21 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => array_filter(
+    // Always allow Vercel deployments (any *.vercel.app subdomain) and the
+    // resort's own domain, then merge in anything supplied via the
+    // CORS_ALLOWED_ORIGINS environment variable (e.g. local dev origins).
+    // Defaulting here means the API keeps working even if the platform's
+    // environment injection is slow or misconfigured.
+    'allowed_origins' => array_filter(array_merge(
+        [
+            'https://*.vercel.app',
+            'https://littlesurvivorbeachresort.com',
+        ],
         array_map(
             'trim',
-            explode(',', (string) env('CORS_ALLOWED_ORIGINS', 'http://localhost'))
+            explode(',', (string) env('CORS_ALLOWED_ORIGINS', ''))
         )
-    ),
+    )),
 
     'allowed_origins_patterns' => [],
 
