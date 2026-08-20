@@ -1,3 +1,5 @@
+<?php $base = ''; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,16 +8,16 @@
   <title>Little Survivor Beach Resort</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Little Survivor Beach Resort">
-  <link rel="icon" type="image/png" href="/assets/images/logo.png" sizes="16x16 32x32">
+  <link rel="icon" type="image/png" href="<?= $base ?>assets/images/logo.png" sizes="16x16 32x32">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="/assets/css/global.css">
-  <link rel="stylesheet" href="/assets/css/pages/home.css">
+  <link rel="stylesheet" href="<?= $base ?>assets/css/global.css">
+  <link rel="stylesheet" href="<?= $base ?>assets/css/pages/home.css">
 </head>
 
 <body>
   <header>
     <!--nav-->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/navbar.php'; ?>
+    <?php include $base . 'assets/includes/navbar.php'; ?>
   </header>
   <!--hero-->
   <section class="hero" id="hero">
@@ -610,7 +612,6 @@
           <div class="form-feedback" id="formFeedback" role="alert" aria-live="assertive"></div>
 
           <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
-          </button>
         </form>
       </div>
     </div>
@@ -619,10 +620,10 @@
 
   <footer>
     <!--footer-->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php'; ?>
+    <?php include $base . 'assets/includes/footer.php'; ?>
   </footer>
 
-  <script src="/assets/js/main.js"></script>
+  <script src="<?= $base ?>assets/js/main.js"></script>
 </body>
 
 </html>

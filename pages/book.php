@@ -11,9 +11,9 @@ $base = '../';
   <title>Little Survivor Beach Resort</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Little Survivor Beach Resort">
-  <link rel="icon" type="image/png" href="/assets/images/logo.png" sizes="16x16 32x32">
-  <link rel="stylesheet" href="/assets/css/global.css">
-  <link rel="stylesheet" href="/assets/css/pages/book.css">
+  <link rel="icon" type="image/png" href="<?= $base ?>assets/images/logo.png" sizes="16x16 32x32">
+  <link rel="stylesheet" href="<?= $base ?>assets/css/global.css">
+  <link rel="stylesheet" href="<?= $base ?>assets/css/pages/book.css">
 </head>
 
 <body>
@@ -31,13 +31,51 @@ $base = '../';
     <p class="hero-eyebrow">Reserve Your Stay</p>
     <h1 class="hero-title" id="book-hero-title">Book Your <em>Escape</em></h1>
     <p class="hero-sub">
-      Choose your room, pick your dates, and add the experiences
-      that will make your stay unforgettable.
+      Online booking is on its way &mdash; stay tuned while we
+      prepare to welcome you.
     </p>
-    <a href="#contact-page" class="btn-frosted">Send Us a Message</a>
+    <a href="#book-coming" class="btn-frosted">Coming Soon</a>
   </div>
  
 </section>
+
+  <!--coming soon-->
+  <section class="book-coming" id="book-coming" aria-labelledby="book-coming-heading">
+    <div class="book-coming-inner">
+
+      <div class="book-coming-header">
+        <span class="section-tag">Online Booking</span>
+        <h2 class="section-heading" id="book-coming-heading">Bookings <em>Coming Soon</em></h2>
+        <div class="section-divider"></div>
+        <p class="section-body">
+          We&rsquo;re putting the finishing touches on our online booking system
+          so you can reserve your stay right from your screen. It will be live
+          very soon &mdash; and we can&rsquo;t wait to have you.
+        </p>
+
+        <div class="book-coming-note">
+          <span class="note-label">Meanwhile</span>
+          <p class="note-text">
+            We&rsquo;d be happy to arrange your stay personally &mdash; just
+            reach out through our contact page and our team will take care of you.
+          </p>
+        </div>
+      </div>
+
+      <div class="book-coming-card reveal">
+        <div class="card-icon-wrap" aria-hidden="true">
+          <i class="fa-solid fa-spa"></i>
+        </div>
+        <h3 class="card-title">We&rsquo;re Almost Ready</h3>
+        <p class="card-text">
+          Booking will be available shortly. For now, send us a message and
+          we&rsquo;ll help you plan your escape to the coast.
+        </p>
+        <a href="<?= $base ?>pages/contact-us.php" class="btn-frosted">Send Us a Message</a>
+      </div>
+
+    </div>
+  </section>
 
   <footer>
     <?php include $base . '/assets/includes/footer.php'; ?>

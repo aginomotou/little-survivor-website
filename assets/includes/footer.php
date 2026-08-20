@@ -29,20 +29,20 @@
       <nav class="footer-nav-col" aria-label="Explore Links">
         <p class="footer-col-label">Explore</p>
         <ul class="footer-links">
-          <li><a href="/index.php">Home</a></li>
-          <li><a href="/pages/accommodations.php">Accommodations</a></li>
-          <li><a href="/pages/amenities.php">Amenities</a></li>
-          <li><a href="/pages/experiences.php">Experiences</a></li>
-          <li><a href="/pages/gallery.php">Gallery</a></li>
+          <li><a href="<?= $base ?>index.php">Home</a></li>
+          <li><a href="<?= $base ?>pages/accommodations.php">Accommodations</a></li>
+          <li><a href="<?= $base ?>pages/amenities.php">Amenities</a></li>
+          <li><a href="<?= $base ?>pages/experiences.php">Experiences</a></li>
+          <li><a href="<?= $base ?>pages/gallery.php">Gallery</a></li>
         </ul>
       </nav>
 
       <nav class="footer-nav-col" aria-label="Company Links">
         <p class="footer-col-label">The Resort</p>
         <ul class="footer-links">
-          <li><a href="/pages/about.php">About</a></li>
-          <li><a href="/pages/contact-us.php">Contact Us</a></li>
-          <li><a href="/pages/book.php">Book Now</a></li>
+          <li><a href="<?= $base ?>pages/about.php">About</a></li>
+          <li><a href="<?= $base ?>pages/contact-us.php">Contact Us</a></li>
+          <li><a href="<?= $base ?>pages/book.php">Book Now</a></li>
         </ul>
       </nav>
 

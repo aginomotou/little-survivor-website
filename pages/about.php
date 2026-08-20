@@ -11,9 +11,9 @@ $base = '../';
   <title>Little Survivor Beach Resort</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Little Survivor Beach Resort">
-  <link rel="icon" type="image/png" href="/assets/images/logo.png" sizes="16x16 32x32">
-  <link rel="stylesheet" href="/assets/css/global.css">
-  <link rel="stylesheet" href="/assets/css/pages/about.css">
+  <link rel="icon" type="image/png" href="<?= $base ?>assets/images/logo.png" sizes="16x16 32x32">
+  <link rel="stylesheet" href="<?= $base ?>assets/css/global.css">
+  <link rel="stylesheet" href="<?= $base ?>assets/css/pages/about.css">
 </head>
 
 <body>
@@ -32,7 +32,7 @@ $base = '../';
       <p class="hero-sub">
         A family&rsquo;s dream, rooted in the shore, built with resilience and run with heart.
       </p>
-      <a href="#contact-page" class="btn-frosted">Send Us a Message</a>
+      <a href="#story" class="btn-frosted">Our Story</a>
     </div>
   </section>
 

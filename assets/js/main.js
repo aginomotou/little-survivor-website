@@ -87,6 +87,10 @@ var lightboxNext = document.getElementById("lightboxNext");
 var visibleItems = [];
 var currentIndex = 0;
 
+//gallery and lightbox markup only exist on the gallery page; skip this block
+//elsewhere so the inquiry form handler below is always registered
+if (lightbox) {
+
 //for filtering by category  
 filterButtons.forEach(function (btn) {
   btn.addEventListener("click", function () {
@@ -199,8 +203,123 @@ lightbox.addEventListener('click', function (e) {
  
 document.addEventListener('keydown', function (e) {
   if (!lightbox.classList.contains('active')) return;
- 
+
   if (e.key === 'Escape')      { closeLightbox(); }
   if (e.key === 'ArrowLeft')   { showPrev(); }
   if (e.key === 'ArrowRight')  { showNext(); }
 });
+
+}
+
+//inquiry form: live character counter + AJAX submission
+var inquiryForm = document.getElementById("inquiryForm");
+
+if (inquiryForm) {
+  var pagePath = window.location.pathname;
+  var siteBase = pagePath.replace(/\/pages\/[^/]+\.php$/, "").replace(/\/[^/]+\.php$/, "").replace(/\/+$/, "");
+  var API_ENDPOINT = window.location.origin + siteBase +
+    "/backend/public/api/inquiries";
+
+  var messageInput = document.getElementById("message");
+  var charCount    = document.getElementById("charCount");
+  var submitBtn    = document.getElementById("submitBtn");
+  var formFeedback = document.getElementById("formFeedback");
+
+  var DEFAULT_BTN_TEXT = submitBtn ? submitBtn.textContent : "Send Message";
+
+  function showFeedback (message, isError) {
+    formFeedback.textContent = message;
+    formFeedback.classList.add("visible");
+    formFeedback.classList.toggle("is-error", !!isError);
+    formFeedback.classList.toggle("is-success", !isError);
+  }
+
+  function clearFeedback () {
+    formFeedback.classList.remove("visible", "is-error", "is-success");
+  }
+
+  function setLoading (loading) {
+    submitBtn.disabled = loading;
+    submitBtn.textContent = loading ? "Sending..." : DEFAULT_BTN_TEXT;
+  }
+
+  //character counter
+  if (messageInput && charCount) {
+    function updateCharCount () {
+      charCount.textContent = messageInput.value.length + " / 1000";
+    }
+    messageInput.addEventListener("input", updateCharCount);
+    updateCharCount();
+  }
+
+  function buildPayload () {
+    var honeypot = document.getElementById("website");
+    return {
+      first_name: document.getElementById("firstName").value.trim(),
+      last_name:  document.getElementById("lastName").value.trim(),
+      email:      document.getElementById("email").value.trim(),
+      topic:      document.getElementById("inquiry-type").value,
+      message:    document.getElementById("message").value.trim(),
+      website:    honeypot ? honeypot.value : ""
+    };
+  }
+
+  inquiryForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    clearFeedback();
+
+    //honeypot: silently ignore bot submissions
+    var honeypot = document.getElementById("website");
+    if (honeypot && honeypot.value) {
+      showFeedback("Thank you! Your inquiry has been received.", false);
+      inquiryForm.reset();
+      return;
+    }
+
+    setLoading(true);
+
+    fetch(API_ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(buildPayload())
+    })
+      .then(function (response) {
+        return response.json().catch(function () {
+          return null;
+        }).then(function (data) {
+          return { ok: response.ok, status: response.status, data: data };
+        });
+      })
+      .then(function (result) {
+        if (result.ok && result.data && result.data.message) {
+          showFeedback(result.data.message, false);
+          inquiryForm.reset();
+          if (charCount) { updateCharCount(); }
+          return;
+        }
+
+        if (result.status === 422 && result.data && result.data.errors) {
+          var firstError = Object.values(result.data.errors)[0];
+          var message    = Array.isArray(firstError) ? firstError[0] : firstError;
+          showFeedback(message || "Please check the form and try again.", true);
+          return;
+        }
+
+        if (result.status === 429) {
+          showFeedback("You've sent too many messages. Please wait about a minute and try again.", true);
+          return;
+        }
+
+        showFeedback("Something went wrong on our end. Please try again later.", true);
+      })
+      .catch(function () {
+        showFeedback("We couldn't reach the server. Please check your connection and try again.", true);
+      })
+      .finally(function () {
+        setLoading(false);
+      });
+  });
+}

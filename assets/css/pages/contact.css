@@ -198,16 +198,18 @@
 }
 
 .btn-submit:disabled {
-  opacity: 0.6s;
+  opacity: 0.6;
   cursor: not-allowed;
   transform: none;
 }
 
 .form-feedback {
   display: none;
-  padding: 0.82rem;
-  font-weight: 400;
-  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.6;
+  padding: 0.82rem 0.95rem;
   border-left: 3px solid var(--gold);
   background: rgba(184, 150, 106, 0.08);
   color: var(--text);
@@ -221,6 +223,12 @@
   border-color: #c0392b;
   background-color: rgba(192, 57, 43, 0.06);
   color: #7a1f15;
+}
+
+.form-feedback.is-success {
+  border-color: #2e7d4f;
+  background-color: rgba(46, 125, 79, 0.07);
+  color: #1e5c39;
 }
 
 /*location*/

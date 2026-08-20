@@ -11,10 +11,10 @@ $base = '../';
   <title>Little Survivor Beach Resort</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Little Survivor Beach Resort">
-  <link rel="icon" type="image/png" href="/assets/images/logo.png" sizes="16x16 32x32">
+  <link rel="icon" type="image/png" href="<?= $base ?>assets/images/logo.png" sizes="16x16 32x32">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="/assets/css/global.css">
-  <link rel="stylesheet" href="/assets/css/pages/contact.css">
+  <link rel="stylesheet" href="<?= $base ?>assets/css/global.css">
+  <link rel="stylesheet" href="<?= $base ?>assets/css/pages/contact.css">
 </head>
 
 <body>
