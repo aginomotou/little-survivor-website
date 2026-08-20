@@ -3,7 +3,11 @@
   "rewrites": [
     {
       "source": "/backend/public/api/:path*",
-      "destination": "https://YOUR-RAILWAY-APP.up.railway.app/api/:path*"
+      "destination": "https://little-survivor-website-production.up.railway.app/api/:path*"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "https://little-survivor-website-production.up.railway.app/api/:path*"
     },
     {
       "source": "/:path*.php",
