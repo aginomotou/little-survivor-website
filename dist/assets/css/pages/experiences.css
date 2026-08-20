@@ -1,0 +1,358 @@
+.hero-bg--experiences {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://images.unsplash.com/photo-1520942702018-0862200e6873?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center 30%;
+  transform: scale(1.06);
+}
+
+/*exp intro*/
+.experiences-intro {
+  padding: 5.5rem 3.75rem;
+  background: var(--ivory);
+  text-align: center;
+}
+
+.experiences-intro-inner {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.experiences-intro-quote {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.experiences-intro-line {
+  width: 3.25rem;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 1.5rem;
+}
+
+.experiences-intro-body {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.95;
+  color: var(--text-light);
+}
+
+/*activity*/
+.activity-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 30rem;
+  overflow: hidden;
+}
+
+.activity-block--reverse {
+  direction: rtl;
+}
+
+.activity-block--reverse > * {
+  direction: ltr;
+}
+
+/* alternate background colours so blocks don't bleed together */
+.activity-block--light {
+  background: var(--ivory);
+}
+.activity-block--sand {
+  background: #f0e8d8;
+}
+.activity-block--dark {
+  background: var(--ocean-deep);
+}
+
+.activity-img {
+  position: relative;
+  overflow: hidden;
+  min-height: 22rem;
+}
+
+.activity-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 8s ease;
+}
+
+.activity-block:hover .activity-img img {
+  transform: scale(1.04);
+}
+
+.activity-content {
+  padding: 4.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* rate badge */
+.activity-rate {
+  display: inline-block;
+  font-family: "Cinzel", serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding: 0.35em 1em;
+  margin-bottom: 1.25rem;
+  align-self: flex-start;
+}
+
+.activity-rate--paid {
+  background: var(--gold);
+  color: var(--white);
+}
+
+.activity-rate--free {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold-deep);
+}
+
+/* on dark blocks the free badge needs lighter text */
+.activity-block--dark .activity-rate--free {
+  border-color: var(--gold-pale);
+  color: var(--gold-pale);
+}
+
+.activity-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: var(--dark);
+}
+
+/*dark block override*/
+.activity-block--dark .activity-title {
+  color: var(--white);
+}
+.activity-block--dark .activity-title em {
+  color: var(--gold-pale);
+}
+
+.activity-divider {
+  width: 3.25rem;
+  height: 1px;
+  background: var(--gold);
+  margin: 1.25rem 0;
+}
+
+.activity-block--dark .activity-divider {
+  background: rgba(184, 150, 106, 0.45);
+}
+
+.activity-desc {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.95;
+  color: var(--text-light);
+  max-width: 28rem;
+  margin-bottom: 0.75rem;
+}
+
+.activity-block--dark .activity-desc {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+/* price display */
+.activity-price {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.75rem;
+  font-weight: 300;
+  color: var(--ocean-deep);
+  margin-top: 1.5rem;
+}
+
+.activity-block--dark .activity-price {
+  color: var(--gold-pale);
+}
+
+.activity-price-unit {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--text-light);
+  margin-left: 0.25rem;
+}
+
+.activity-block--dark .activity-price-unit {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/*free*/
+.free-activities {
+  padding: 6rem 3.75rem;
+  background: var(--sand-light);
+}
+
+.free-activities-inner {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.free-activities-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.free-activities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.free-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.free-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width 0.4s ease;
+}
+
+.free-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1.2rem 2.5rem rgba(26, 20, 12, 0.09);
+}
+
+.free-card:hover::after {
+  width: 100%;
+}
+
+.free-card-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--sand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.3s;
+}
+
+.free-card:hover .free-card-icon {
+  background: var(--gold-pale);
+}
+
+.free-card-icon i {
+  font-size: 1rem;
+  color: var(--gold-deep);
+}
+
+.free-card-name {
+  font-family: "Cinzel", serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+.free-card-desc {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--text-light);
+  line-height: 1.75;
+  flex: 1;
+}
+
+.free-card-badge {
+  display: inline-block;
+  font-family: "Cinzel", serif;
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  border: 1px solid rgba(184, 150, 106, 0.4);
+  padding: 0.3em 0.85em;
+  align-self: flex-start;
+}
+
+.experiences-cta {
+  position: relative;
+  padding: 7rem 3.75rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.experiences-cta-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.4) saturate(0.7);
+}
+
+.experiences-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+.experiences-cta-tag {
+  display: block;
+  font-family: "Cinzel", serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--gold-pale);
+  margin-bottom: 1.25rem;
+}
+
+.experiences-cta-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.experiences-cta-title em {
+  font-style: italic;
+  color: var(--gold-pale);
+}
+
+.experiences-cta-sub {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.85;
+  margin-bottom: 2.5rem;
+}
+
+.experiences-cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}

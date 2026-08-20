@@ -1,6 +1,3 @@
-# Build output for Vercel
-/dist/
-
 # Vercel CLI local cache
 /.vercel/
 

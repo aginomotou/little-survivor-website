@@ -1,0 +1,444 @@
+.contact-page {
+  padding: 6rem 3.75rem;
+  background: var(--sand-light);
+}
+
+.contact-page-inner {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.hero-bg--contact {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://images.unsplash.com/photo-1520942702018-0862200e6873?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center 30%;
+  transform: scale(1.06);
+}
+
+/*strip*/
+.contact-strip {
+  background: var(--ocean-deep);
+  border-bottom: 1px solid rgba(184, 150, 106, 0.15);
+  padding: 2.75rem 3.75rem;
+}
+
+.contact-strip-inner {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.strip-item {
+  flex: 1;
+  text-align: center;
+  padding: 0 2.5rem;
+  position: relative;
+}
+
+.strip-item + .strip-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2rem;
+  width: 1px;
+  background: rgba(184, 150, 106, 0.3);
+}
+
+.strip-item-label {
+  font-family: "Cinzel", serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.strip-item-value {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--gold-pale);
+  display: block;
+  line-height: 1.3;
+}
+
+/*forms*/
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.form-pot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.form-group label {
+  font-family: "Cinzel", serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  color: var(--text);
+  text-transform: uppercase;
+}
+
+.form-group label .req {
+  color: var(--gold-deep);
+  margin-left: 0.2rem;
+  font-style: normal;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--text);
+  background: var(--white);
+  border: 1px solid rgba(184, 150, 106, 0.3);
+  padding: 0.85rem 1rem;
+  outline: none;
+  width: 100%;
+  border-radius: 0;
+  transition:
+    border-color 0.25s,
+    box-shadow 0.25s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(184, 150, 106, 0.15);
+}
+
+.form-group input:user-invalid,
+.form-group select:user-invalid,
+.form-group textarea:user-invalid {
+  border-color: #c0392b;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 7.5rem;
+}
+
+.form-hint {
+  font-size: 0.72rem;
+  font-weight: 300;
+  color: var(--text-light);
+  text-align: right;
+  margin-top: -0.25rem;
+}
+
+.form-privacy {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--text-light);
+  line-height: 1.7;
+  border-left: 2px solid var(--gold-pale);
+  padding-left: 0.85rem;
+}
+
+.form-privacy a {
+  color: var(--gold-deep);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.form-privacy a:hover {
+  color: var(--ocean);
+}
+
+.btn-submit {
+  align-self: flex-start;
+  font-family: "Cinzel", serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.26rem;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--gold-deep);
+  border: none;
+  padding: 1em 2.4em;
+  cursor: pointer;
+  transition:
+    background 0.28s,
+    transform 0.2s;
+}
+
+.btn-submit:hover {
+  background: var(--gold);
+  transform: translateY(-2px);
+}
+.btn-submit:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-feedback {
+  display: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.6;
+  padding: 0.82rem 0.95rem;
+  border-left: 3px solid var(--gold);
+  background: rgba(184, 150, 106, 0.08);
+  color: var(--text);
+}
+
+.form-feedback.visible {
+  display: block;
+}
+
+.form-feedback.is-error {
+  border-color: #c0392b;
+  background-color: rgba(192, 57, 43, 0.06);
+  color: #7a1f15;
+}
+
+.form-feedback.is-success {
+  border-color: #2e7d4f;
+  background-color: rgba(46, 125, 79, 0.07);
+  color: #1e5c39;
+}
+
+/*location*/
+.map-wrapper {
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.map-wrapper iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 380px;
+  border: none;
+  border-radius: 4px;
+}
+
+.location-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
+  gap: 2rem 1.5rem;
+}
+
+.location-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.location-icon-wrap {
+  width: 2.25rem;
+  height: 2.25rem;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.location-icon-wrap i {
+  font-size: 0.85rem;
+  color: var(--white);
+}
+
+.location-content h4 {
+  font-family: "Cinzel", serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  color: var(--dark);
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.location-content p,
+.location-content a {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--text-light);
+  line-height: 1.7;
+  display: block;
+  transition: color 0.2s;
+}
+.location-item a:hover {
+  color: var(--gold-deep);
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hours-table td {
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--text-light);
+  padding: 0.22rem 0;
+  vertical-align: top;
+}
+
+.label-column {
+  padding-right: 1.5rem;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+/*faq*/
+.faq-section {
+  padding: 6rem 3.75rem;
+  background: var(--ocean-deep);
+}
+.faq-inner {
+  max-width: 52rem;
+  margin: 0 auto;
+}
+.faq-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.faq-header .section-tag {
+  color: var(--gold-pale);
+}
+.faq-header .section-heading {
+  color: var(--white);
+}
+.faq-header .section-heading em {
+  color: var(--gold-pale);
+}
+.faq-header .section-divider {
+  background: rgba(184, 150, 106, 0.45);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(184, 150, 106, 0.15);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  text-align: left;
+}
+.faq-question:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.faq-question-text {
+  font-family: "Cinzel", serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.faq-icon-wrap {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid rgba(184, 150, 106, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition:
+    background 0.25s,
+    border-color 0.25s,
+    transform 0.35s;
+}
+.faq-icon-wrap i {
+  font-size: 0.65rem;
+  color: var(--gold-pale);
+  transition: color 0.25s;
+}
+
+.faq-item.open .faq-icon-wrap {
+  background: var(--gold);
+  border-color: var(--gold);
+  transform: rotate(45deg);
+}
+.faq-item.open .faq-icon-wrap i {
+  color: var(--white);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 20rem;
+  transition: max-height 1.5s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 20rem;
+}
+
+.faq-answer-inner {
+  padding-bottom: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.9;
+}

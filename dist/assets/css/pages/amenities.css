@@ -1,0 +1,395 @@
+/* ── Hero ── */
+.hero-bg--amenities {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1800&q=85');
+  background-size: cover;
+  background-position: center 40%;
+  transform: scale(1.06);
+}
+ 
+/* ── Strip ── */
+.amen-strip {
+  background: var(--ocean-deep);
+  border-bottom: 1px solid rgba(184, 150, 106, 0.15);
+  padding: 1.75rem 3.75rem;
+}
+ 
+.amen-strip-inner {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.amen-strip .strip-item {
+  flex: 1;
+  text-align: center;
+  padding: 0 2.5rem;
+}
+ 
+.amen-strip .strip-item-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+ 
+.amen-strip .strip-item-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--gold-pale);
+  display: block;
+  line-height: 1.3;
+}
+ 
+.amen-strip .strip-item-divider {
+  width: 1px;
+  height: 2rem;
+  background: rgba(184, 150, 106, 0.3);
+  flex-shrink: 0;
+}
+ 
+/* ─────────────────────────────────────────────────────────────
+   INTRO
+───────────────────────────────────────────────────────────── */
+.amen-intro {
+  padding: 5.5rem 3.75rem;
+  background: var(--ivory);
+  text-align: center;
+}
+ 
+.amen-intro-inner {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+ 
+/* ─────────────────────────────────────────────────────────────
+   AMENITY BLOCKS
+   Simpler than accommodations — single image, no thumbnails.
+   Alternating layout: image left / right.
+───────────────────────────────────────────────────────────── */
+.amen-section {
+  padding: 0;
+}
+ 
+.amen-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 28rem;
+  overflow: hidden;
+}
+ 
+.amen-block--reverse {
+  direction: rtl;
+}
+ 
+.amen-block--reverse > * {
+  direction: ltr;
+}
+ 
+/* alternate background so blocks don't bleed together */
+.amen-block--ivory { background: var(--ivory); }
+.amen-block--sand  { background: var(--sand-light); }
+.amen-block--warm  { background: #f0e8d8; }
+.amen-block--dark  { background: var(--ocean-deep); }
+ 
+/* ── Image side ── */
+.amen-block-img {
+  position: relative;
+  overflow: hidden;
+  min-height: 22rem;
+}
+ 
+.amen-block-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 8s ease;
+}
+ 
+.amen-block:hover .amen-block-img img {
+  transform: scale(1.04);
+}
+ 
+/* ── Content side ── */
+.amen-block-content {
+  padding: 4.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.amen-block-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  background: rgba(184, 150, 106, 0.12);
+  border: 1px solid rgba(184, 150, 106, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+}
+ 
+.amen-block-icon i {
+  font-size: 1rem;
+  color: var(--gold-deep);
+}
+ 
+/* dark block icon override */
+.amen-block--dark .amen-block-icon {
+  background: rgba(184, 150, 106, 0.1);
+  border-color: rgba(184, 150, 106, 0.25);
+}
+ 
+.amen-block--dark .amen-block-icon i {
+  color: var(--gold-pale);
+}
+ 
+.amen-block-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.15;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+ 
+.amen-block-title em {
+  font-style: italic;
+  color: var(--gold-deep);
+}
+ 
+/* dark block text overrides */
+.amen-block--dark .amen-block-title     { color: var(--white); }
+.amen-block--dark .amen-block-title em  { color: var(--gold-pale); }
+ 
+.amen-block-divider {
+  width: 3.25rem;
+  height: 1px;
+  background: var(--gold);
+  margin: 1.25rem 0;
+}
+ 
+.amen-block--dark .amen-block-divider {
+  background: rgba(184, 150, 106, 0.45);
+}
+ 
+.amen-block-desc {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.95;
+  color: var(--text-light);
+  max-width: 28rem;
+  margin-bottom: 1.5rem;
+}
+ 
+.amen-block--dark .amen-block-desc {
+  color: rgba(255, 255, 255, 0.6);
+}
+ 
+/* small feature list inside each block */
+.amen-block-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+ 
+.amen-block-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--text-light);
+}
+ 
+.amen-block-feature i {
+  font-size: 0.65rem;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+ 
+.amen-block--dark .amen-block-feature       { color: rgba(255, 255, 255, 0.55); }
+.amen-block--dark .amen-block-feature i     { color: var(--gold-pale); }
+ 
+/* ─────────────────────────────────────────────────────────────
+   OUTDOOR AMENITIES — smaller cards at the bottom
+   Beach, volleyball, sunset — things that don't need a
+   full alternating block because they're self-explanatory.
+───────────────────────────────────────────────────────────── */
+.amen-outdoors {
+  padding: 6rem 3.75rem;
+  background: var(--sand-light);
+}
+ 
+.amen-outdoors-inner {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+ 
+.amen-outdoors-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+ 
+.amen-outdoors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+ 
+.amen-outdoor-card {
+  background: var(--white);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+ 
+.amen-outdoor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1.2rem 2.5rem rgba(26, 20, 12, 0.09);
+}
+ 
+.amen-outdoor-img {
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.amen-outdoor-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+  filter: brightness(0.9);
+}
+ 
+.amen-outdoor-card:hover .amen-outdoor-img img {
+  transform: scale(1.05);
+  filter: brightness(1);
+}
+ 
+.amen-outdoor-body {
+  padding: 1.5rem;
+  border-top: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+ 
+.amen-outdoor-card:hover .amen-outdoor-body {
+  border-top-color: var(--gold);
+}
+ 
+.amen-outdoor-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  background: var(--sand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.85rem;
+  transition: background 0.3s;
+}
+ 
+.amen-outdoor-card:hover .amen-outdoor-icon {
+  background: var(--gold-pale);
+}
+ 
+.amen-outdoor-icon i {
+  font-size: 0.85rem;
+  color: var(--gold-deep);
+}
+ 
+.amen-outdoor-name {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dark);
+  margin-bottom: 0.6rem;
+}
+ 
+.amen-outdoor-desc {
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--text-light);
+  line-height: 1.75;
+}
+ 
+/* ─────────────────────────────────────────────────────────────
+   CTA
+───────────────────────────────────────────────────────────── */
+.amen-cta {
+  position: relative;
+  padding: 7rem 3.75rem;
+  text-align: center;
+  overflow: hidden;
+}
+ 
+.amen-cta-bg {
+  position: absolute;
+  inset: 0;
+}
+ 
+.amen-cta-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.38) saturate(0.7);
+}
+ 
+.amen-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+ 
+.amen-cta-tag {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--gold-pale);
+  margin-bottom: 1.25rem;
+}
+ 
+.amen-cta-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+ 
+.amen-cta-title em {
+  font-style: italic;
+  color: var(--gold-pale);
+}
+ 
+.amen-cta-sub {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.85;
+  margin-bottom: 2.5rem;
+}
+ 
+.amen-cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
