@@ -34,6 +34,10 @@ foreach ($pages as $srcRel => $dstRel) {
 
     ob_start();
     try {
+        // Apache sets the working directory to the requested page's folder,
+        // so relative includes like '../assets/includes/navbar.php' resolve
+        // from the page's own directory. Mimic that here.
+        chdir(dirname($source));
         $base = '';
         include $source;
         $html = ob_get_clean();
@@ -41,6 +45,8 @@ foreach ($pages as $srcRel => $dstRel) {
         ob_end_clean();
         fwrite(STDERR, "Failed to build {$srcRel}: {$e->getMessage()}\n");
         exit(1);
+    } finally {
+        chdir($root);
     }
 
     file_put_contents($target, $html);

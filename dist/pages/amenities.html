@@ -16,21 +16,28 @@
 <body>
   <header>
     <!--nav-->
-    
-Warning: include(..//assets/includes/navbar.php): Failed to open stream: No such file or directory in C:\wamp64\www\little-survivor-website\pages\amenities.php on line 23
-
-Call Stack:
-    0.0009     593080   1. {main}() C:\wamp64\www\little-survivor-website\build.php:0
-    0.0218     699880   2. include('C:\wamp64\www\little-survivor-website\pages\amenities.php') C:\wamp64\www\little-survivor-website\build.php:38
-
-
-Warning: include(): Failed opening '..//assets/includes/navbar.php' for inclusion (include_path='.;C:\php\pear') in C:\wamp64\www\little-survivor-website\pages\amenities.php on line 23
-
-Call Stack:
-    0.0009     593080   1. {main}() C:\wamp64\www\little-survivor-website\build.php:0
-    0.0218     699880   2. include('C:\wamp64\www\little-survivor-website\pages\amenities.php') C:\wamp64\www\little-survivor-website\build.php:38
-
-  </header>
+    <nav class="navbar" id="navbar">
+  <div class="nav-left">
+    <ul class="nav-links">
+      <li><a href="../pages/accommodations.php">Accommodations</a></li>
+      <li><a href="../pages/amenities.php">Amenities</a></li>
+      <li><a href="../pages/experiences.php">Experiences</a></li>
+    </ul>
+  </div>
+  <div class="nav-logo">
+    <a href="../index.php" class="home" aria-label="Little Survivor Beach Resort — home">
+      <img src="../assets/images/logo.png" class="logo" alt="Little Survivor Beach Resort Logo">
+    </a>
+  </div>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="../pages/gallery.php">Gallery</a></li>
+      <li><a href="../pages/about.php">About</a></li>
+      <li><a href="../pages/contact-us.php">Contact Us</a></li>
+      <li><a href="../pages/book.php" class="btn-book">Book Now</a></li>
+    </ul>
+  </div>
+</nav>  </header>
 
   <!--hero-->
   <section class="hero" id="hero" aria-labelledby="amen-hero-title">
@@ -348,21 +355,70 @@ Call Stack:
 </section>
 
   <footer>
-    
-Warning: include(..//assets/includes/footer.php): Failed to open stream: No such file or directory in C:\wamp64\www\little-survivor-website\pages\amenities.php on line 342
+    <footer>
+  <div class="footer-inner">
 
-Call Stack:
-    0.0009     593080   1. {main}() C:\wamp64\www\little-survivor-website\build.php:0
-    0.0218     699880   2. include('C:\wamp64\www\little-survivor-website\pages\amenities.php') C:\wamp64\www\little-survivor-website\build.php:38
+    <div class="footer-brand-row">
+      <div class="footer-wordmark">Little Survivor Beach Resort</div>
+      <div class="footer-sub">Botolan, Philippines</div>
+      <div class="ornament-row">
+        <div class="orn-line"></div>
+        <div class="orn-gem"></div>
+        <div class="orn-line"></div>
+      </div>
+    </div>
 
+    <div class="footer-columns">
 
-Warning: include(): Failed opening '..//assets/includes/footer.php' for inclusion (include_path='.;C:\php\pear') in C:\wamp64\www\little-survivor-website\pages\amenities.php on line 342
+      <section class="footer-info-col">
+        <h6 class="footer-col-label">About the Resort</h6>
+        <p class="footer-about-text">
+          A peaceful beachfront escape where nature, comfort, and island living come together —
+          crafted for those who seek rest and genuine connection by the sea.
+        </p>
+        <address class="footer-contact">
+          <span>Purok 8, Barangay Panan</span><br>
+          <span>Botolan, 2202 Zambales, Philippines</span><br>
+          <a href="mailto:littlesurvivorbeachresort@gmail.com">littlesurvivorbeachresort@gmail.com</a>
+        </address>
+      </section>
 
-Call Stack:
-    0.0009     593080   1. {main}() C:\wamp64\www\little-survivor-website\build.php:0
-    0.0218     699880   2. include('C:\wamp64\www\little-survivor-website\pages\amenities.php') C:\wamp64\www\little-survivor-website\build.php:38
+      <nav class="footer-nav-col" aria-label="Explore Links">
+        <p class="footer-col-label">Explore</p>
+        <ul class="footer-links">
+          <li><a href="../index.php">Home</a></li>
+          <li><a href="../pages/accommodations.php">Accommodations</a></li>
+          <li><a href="../pages/amenities.php">Amenities</a></li>
+          <li><a href="../pages/experiences.php">Experiences</a></li>
+          <li><a href="../pages/gallery.php">Gallery</a></li>
+        </ul>
+      </nav>
 
-  </footer>
+      <nav class="footer-nav-col" aria-label="Company Links">
+        <p class="footer-col-label">The Resort</p>
+        <ul class="footer-links">
+          <li><a href="../pages/about.php">About</a></li>
+          <li><a href="../pages/contact-us.php">Contact Us</a></li>
+          <li><a href="../pages/book.php">Book Now</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-nav-col" aria-label="Legal Links">
+        <p class="footer-col-label">Legal</p>
+        <ul class="footer-links">
+          <li><a href="../pages/privacy-policy.php">Privacy Policy</a></li>
+          <li><a href="../pages/terms.php">Terms &amp; Conditions</a></li>
+          <li><a href="../pages/cookie-policy.php">Cookie Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; 2026 Little Survivor Beach Resort. All rights reserved.</span>
+    <span>Established on the coast of Botolan, Zambales</span>
+  </div>
+</footer>  </footer>
 
   <script src="../assets/js/main.js"></script>
 </body>

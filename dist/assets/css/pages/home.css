@@ -278,9 +278,6 @@
   align-items: start;
 }
  
-/* ── Indoor list column ── */
-.amen-indoors {}
- 
 .amen-indoors-label {
   margin-bottom: 1.5rem;
 }
@@ -346,7 +343,7 @@
   line-height: 1.65;
 }
  
-/* ── Photo column ── */
+/*photo*/
 .amen-photos {
   display: flex;
   flex-direction: column;
