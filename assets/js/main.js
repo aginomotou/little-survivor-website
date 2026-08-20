@@ -78,6 +78,65 @@ if (revealElements.length > 0) {
   }
 }
 
+//accommodations
+var thumbs = document.querySelectorAll('.acc-gallery-thumb');
+ 
+thumbs.forEach(function (thumb) {
+  thumb.addEventListener('click', function () {
+    switchImage(thumb);
+  });
+ 
+  /* Keyboard support — Enter or Space also triggers the switch */
+  thumb.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      switchImage(thumb);
+    }
+  });
+});
+ 
+ 
+function switchImage(thumb) {
+ 
+  /* Get the target main image id, new src, and new alt from data attributes */
+  var targetId = thumb.getAttribute('data-target');
+  var newSrc   = thumb.getAttribute('data-src');
+  var newAlt   = thumb.getAttribute('data-alt');
+ 
+  var mainImg  = document.getElementById(targetId);
+  if (!mainImg) return;
+ 
+  /* Remove active state from all thumbs in the same gallery group */
+  var siblingThumbs = thumb.closest('.acc-gallery-thumbs').querySelectorAll('.acc-gallery-thumb');
+ 
+  siblingThumbs.forEach(function (sib) {
+    sib.classList.remove('active');
+  });
+ 
+  /* Mark clicked thumb as active */
+  thumb.classList.add('active');
+ 
+  /* Fade the main image out, swap src, fade back in */
+  mainImg.classList.add('switching');
+ 
+  /* Wait for fade-out (matches the CSS transition duration of 0.35s) */
+  setTimeout(function () {
+    mainImg.src = newSrc;
+    mainImg.alt = newAlt;
+ 
+    /* Once the new image loads, fade it back in */
+    mainImg.onload = function () {
+      mainImg.classList.remove('switching');
+    };
+ 
+    /* Fallback: remove class after 0.5s even if onload doesn't fire */
+    setTimeout(function () {
+      mainImg.classList.remove('switching');
+    }, 500);
+ 
+  }, 350);
+}
+
 //faq
 var faqButtons = document.querySelectorAll(".faq-question");
 

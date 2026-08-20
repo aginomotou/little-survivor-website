@@ -5,3 +5,6 @@
 backend/vendor/
 backend/.env
 backend/node_modules/
+
+.vercel
+.env*
