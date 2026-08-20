@@ -2,18 +2,6 @@
   "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/index(.php|.html)?",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/:path*.php",
-      "destination": "/:path*",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     {
       "source": "/backend/public/api/:path*",
