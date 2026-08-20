@@ -1,5 +1,7 @@
 {
   "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
     {
       "source": "/backend/public/api/:path*",
@@ -10,7 +12,7 @@
       "destination": "https://little-survivor-website-production.up.railway.app/api/:path*"
     },
     {
-      "source": "/:path*.php",
+      "source": "/:path*",
       "destination": "/:path*.html"
     }
   ]
