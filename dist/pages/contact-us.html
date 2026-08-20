@@ -16,12 +16,13 @@
 <body>
   <header>
     <!--nav-->
-    <nav class="navbar" id="navbar">
+    
+<nav class="navbar" id="navbar">
   <div class="nav-left">
     <ul class="nav-links">
-      <li><a href="../pages/accommodations.php">Accommodations</a></li>
-      <li><a href="../pages/amenities.php">Amenities</a></li>
-      <li><a href="../pages/experiences.php">Experiences</a></li>
+      <li><a href="../pages/accommodations.php" class="">Accommodations</a></li>
+      <li><a href="../pages/amenities.php" class="">Amenities</a></li>
+      <li><a href="../pages/experiences.php" class="">Experiences</a></li>
     </ul>
   </div>
   <div class="nav-logo">
@@ -31,13 +32,38 @@
   </div>
   <div class="nav-right">
     <ul class="nav-links">
-      <li><a href="../pages/gallery.php">Gallery</a></li>
-      <li><a href="../pages/about.php">About</a></li>
-      <li><a href="../pages/contact-us.php">Contact Us</a></li>
+      <li><a href="../pages/gallery.php" class="">Gallery</a></li>
+      <li><a href="../pages/about.php" class="">About</a></li>
+      <li><a href="../pages/contact-us.php" class="active">Contact Us</a></li>
       <li><a href="../pages/book.php" class="btn-book">Book Now</a></li>
     </ul>
   </div>
-</nav>  </header>
+
+  <button
+    class="hamburger"
+    id="hamburger"
+    type="button"
+    aria-label="Open menu"
+    aria-controls="mobileMenu"
+    aria-expanded="false"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <ul>
+    <li><a href="../pages/accommodations.php" class="">Accommodations</a></li>
+    <li><a href="../pages/amenities.php" class="">Amenities</a></li>
+    <li><a href="../pages/experiences.php" class="">Experiences</a></li>
+    <li><a href="../pages/gallery.php" class="">Gallery</a></li>
+    <li><a href="../pages/about.php" class="">About</a></li>
+    <li><a href="../pages/contact-us.php" class="active">Contact Us</a></li>
+  </ul>
+  <a href="../pages/book.php" class="btn-book-mobile">Book Now</a>
+</div>  </header>
 
   <section class="hero" id="hero" aria-labelledby="contact-hero-title">
     <div class="hero-bg--contact" role="presentation"></div>

@@ -13,6 +13,40 @@ if (navbar) {
   );
 }
 
+//hamburger / mobile menu
+var hamburger  = document.getElementById("hamburger");
+var mobileMenu = document.getElementById("mobileMenu");
+
+if (hamburger && mobileMenu) {
+  function setMenu (open) {
+    hamburger.classList.toggle("open", open);
+    hamburger.setAttribute("aria-expanded", String(open));
+    hamburger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    mobileMenu.classList.toggle("open", open);
+    mobileMenu.setAttribute("aria-hidden", String(!open));
+    document.body.style.overflow = open ? "hidden" : "";
+  }
+
+  hamburger.addEventListener("click", function () {
+    setMenu(!mobileMenu.classList.contains("open"));
+  });
+
+  //close the menu when a link is chosen
+  mobileMenu.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      setMenu(false);
+    });
+  });
+
+  //close on Escape and return focus to the button
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && mobileMenu.classList.contains("open")) {
+      setMenu(false);
+      hamburger.focus();
+    }
+  });
+}
+
 var revealElements = document.querySelectorAll('.reveal');
  
 if (revealElements.length > 0) {

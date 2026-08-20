@@ -164,6 +164,11 @@ a { text-decoration: none; }
 .hamburger.open span:nth-child(1) { transform: translateY(6.5px)  rotate(45deg); }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+.hamburger:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
  
 /* mobile drawer */
 .mobile-menu {
@@ -182,6 +187,7 @@ a { text-decoration: none; }
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.35s ease;
+  overflow-y: auto;
 }
  
 .mobile-menu.open {
@@ -644,9 +650,44 @@ footer {
   .amen-photo-item img    { height: 14rem; }
  
   /* experiences */
-  .exp-grid { grid-template-columns: 1fr 1fr; grid-template-rows: unset; }
-  .exp-card:nth-child(1) { grid-column: 1 / -1; grid-row: unset; aspect-ratio: 16 / 7; }
-  .exp-card              { aspect-ratio: 4 / 3; }
+  .exp-header,
+  .experiences-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .exp-header .btn-outline,
+  .exp-header .btn-primary,
+  .exp-header a {
+    margin: 1.5rem auto 0;
+    display: inline-block;
+    text-align: center;
+  }
+
+  /* 2-column layout on tablet */
+  .exp-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1.5rem;
+  }
+
+  /* First card spans across both columns */
+  .exp-card:nth-child(1) {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Remaining cards fill the 2-column grid */
+  .exp-card:not(:nth-child(1)) {
+    grid-column: auto;
+    grid-row: auto;
+    aspect-ratio: 4 / 3;
+    min-height: 14rem;
+  }
  
   /* accommodations */
   .acc-grid { grid-template-columns: 1fr 1fr; }
@@ -693,9 +734,45 @@ footer {
   .page-hero-title { font-size: 2.4rem; }
  
   .amen-photo-item img    { height: 12rem; }
-  .exp-grid     { grid-template-columns: 1fr; }
-  .exp-card:nth-child(1),
-  .exp-card     { aspect-ratio: 16 / 9; }
+  .exp-header,
+  .experiences-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .exp-header .btn-outline,
+  .exp-header .btn-primary,
+  .exp-header a {
+    margin: 1.25rem auto 0;
+    display: inline-block;
+    text-align: center;
+  }
+
+  /* Single stacked column on mobile */
+  .exp-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+  }
+
+  /* Every card is full-width */
+  .exp-grid > *,
+  .exp-card,
+  .exp-card:nth-child(1) {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    min-height: 14rem;
+  }
+
+  .exp-card h3,
+  .exp-title {
+    font-size: 1.4rem;
+  }
   .exp-desc     { max-height: none; }
   .acc-grid     { grid-template-columns: 1fr; }
   .gal-grid     { grid-template-columns: 1fr; }

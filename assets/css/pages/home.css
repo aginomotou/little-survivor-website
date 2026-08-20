@@ -856,3 +856,95 @@
   color: #1e5c39;
 }
 
+/* ==========================================================================
+   LANDING PAGE — RESPONSIVE (tablet & mobile)
+   ========================================================================== */
+
+/* ── Tablet  ≤ 960px ── */
+@media (max-width: 60rem) {
+  /* about: stack the image over the text */
+  #about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img {
+    min-height: 22rem;
+  }
+
+  .about-img::after {
+    background: linear-gradient(to top, var(--ocean-deep) 0%, transparent 55%);
+  }
+
+  .about-content {
+    padding: 3.5rem 2rem;
+  }
+
+  /* reviews decorative quote: scale down */
+  #reviews::before {
+    font-size: 12rem;
+  }
+}
+
+/* ── Mobile  ≤ 560px ── */
+@media (max-width: 35rem) {
+  /* navbar: slim it down so logo + hamburger fit */
+  .navbar {
+    height: 4rem;
+  }
+
+  .nav-logo .logo {
+    width: 3.4rem;
+  }
+
+  .mobile-menu {
+    top: 4rem;
+    gap: 2.25rem;
+  }
+
+  /* about */
+  #about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img {
+    min-height: 16rem;
+  }
+
+  .about-content {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .about-body {
+    font-size: 0.85rem;
+  }
+
+  /* hide the oversized decorative quote on small screens */
+  #reviews::before {
+    display: none;
+  }
+
+  /* contact form */
+  .contact-inner {
+    gap: 2.5rem;
+  }
+
+  .contact-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .btn-submit {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* experience cards: tighten inner padding */
+  .exp-content {
+    padding: 1.1rem;
+  }
+
+  .exp-tag {
+    font-size: 0.55rem;
+  }
+}
+
