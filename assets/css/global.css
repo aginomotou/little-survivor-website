@@ -11,6 +11,12 @@
   padding: 0;
 }
 
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: clip;
+}
+
 :root {
   --sand: #e8dcc8;
   --sand-light: #f5ede0;
