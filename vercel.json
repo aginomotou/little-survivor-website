@@ -4,12 +4,12 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/backend/public/api/:path*",
-      "destination": "https://little-survivor-website-production.up.railway.app/api/:path*"
+      "source": "/backend/public/api/(.*)",
+      "destination": "https://little-survivor-website-production.up.railway.app/api/$1"
     },
     {
-      "source": "/api/:path*",
-      "destination": "https://little-survivor-website-production.up.railway.app/api/:path*"
+      "source": "/api/(.*)",
+      "destination": "https://little-survivor-website-production.up.railway.app/api/$1"
     }
   ]
 }
