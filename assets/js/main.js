@@ -308,7 +308,7 @@ document.addEventListener('keydown', function (e) {
 var inquiryForm = document.getElementById("inquiryForm");
 
 if (inquiryForm) {
-  var API_ENDPOINT = "/api/inquiries";
+  var API_ENDPOINT = "https://little-survivor-website-production.up.railway.app/api/inquiries";
 
   var messageInput = document.getElementById("message");
   var charCount    = document.getElementById("charCount");
