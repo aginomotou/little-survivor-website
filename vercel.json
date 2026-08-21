@@ -1,5 +1,17 @@
 {
   "outputDirectory": "dist",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/index(.php|.html)?",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*.php",
+      "destination": "/:path*",
+      "permanent": true
+    }
+  ]
 }
